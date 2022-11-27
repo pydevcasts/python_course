@@ -72,7 +72,7 @@
 #   "model": "Mustang",
 #   "year": 1964
 # }
-# thisdict.pop("brand")
+# thisdict.pop("brand") required to be having a argument but in list is not nessery istead we run popitem()
 # print(thisdict)
 # =======================================
 

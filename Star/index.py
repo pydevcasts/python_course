@@ -95,3 +95,16 @@ for row in range(4):
 # *    *
 # *    *
 # *    *
+# ======================================
+# 5 rows
+for name in range(5):
+    # 3 column
+    for j in range(3):
+        print('*', end='')
+    print()
+
+# ***
+# ***
+# ***
+# ***
+# ***

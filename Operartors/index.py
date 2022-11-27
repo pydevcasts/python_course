@@ -49,8 +49,3 @@ x -= 3
 print(x)
 
 
-# int, str, float, tuple, frozenset ======> immutable(غیر قابل تغییر)
-# dict, list ,set ============>iterable, mutable(قابل تغییر در طول حیات شی)
-
-# Mutable, Iterable = یعنی مرجع قدیمی به سطل اشغال میره و مرجع جدید مقدار جدیدی میگیرد
-# Immutable == hashable

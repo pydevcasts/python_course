@@ -76,10 +76,10 @@
 
 # a = {1,2,5}
 # b = {4,8,2,9}
-# print(a.union(b)) a + b
+# # print(a.union(b)) a + b
 # print(a | b)
 # ======================
-# print(a.difference(b)) a - b
-# print(a.intersection(b)) share 
+# print(a.difference(b)) 
+# print(a.intersection(b))
 
 
