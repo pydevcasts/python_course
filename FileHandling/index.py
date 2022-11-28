@@ -63,6 +63,14 @@
 # f = open("demofile3.txt", "r")
 # print(f.read())
 
+# ==================================
 
-
-
+# import json
+# import os
+# me = {
+#   'name':'siyamak',
+#   'family':'abbasnezhad',
+#   'age':42
+# }
+# with open(os.path.join(os.getcwd(),'FileHandling', 'demo.txt'), 'a') as file:
+#   json.dump([me], file)

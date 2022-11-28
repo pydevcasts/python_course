@@ -18,15 +18,19 @@
 
 
 # d(0,9)
-# w(a-z)
+# D not number
+# w(a-z A-Z 0-9)
+# W except unicode
 # s(space)
-# + at least one time
-# *
+# + at least one time happen
+# * at least 0 time happen
 # ^ start
 # $ end
+# B not boundry
+# b boundry
 # ========================
 
-# import re
+import re
 
 # #Return a list containing every occurrence of "ai":
 
@@ -58,7 +62,7 @@
 # txt = "The rain in Spain"
 # x = re.search("\s", txt)
 
-# print( x.start()) 
+# print(x.start()) 
 
 # =================================
 
