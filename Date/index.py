@@ -41,5 +41,27 @@ import datetime
 
 # print(x.strftime("%c"))
 # ===========================
+import datetime
+
+answer_format = '%m/%d'
+link_format = "%b_%d"
+link = 'https://academybime.com/wiki/{}'
+
+while True:
+    answer = input("What date would you like? Please use the MM/DD format. Enter 'q' to quit.")
+    answer2 = str(answer)
+    if answer2.upper() == 'Q':
+        break
+
+    try:
+        date = datetime.datetime.strptime(answer, answer_format)
+        output = link.format(date.strftime(link_format))
+        print(output)
+        file = open('output.txt', 'w')
+        file.write(output)
+        file.close()
+    except:
+        print("That's not a valid date. Please try again.")
+        break
 
 # =====================================

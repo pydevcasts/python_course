@@ -74,3 +74,21 @@
 # }
 # with open(os.path.join(os.getcwd(),'FileHandling', 'demo.txt'), 'a') as file:
 #   json.dump([me], file)
+
+# ==========================================
+import csv
+
+# with open("teachers.csv", "a") as csvfile:
+#     fieldnames = ['firstname', 'lastname', 'topic']
+#     teacherwriter = csv.DictWriter(csvfile, fieldnames = fieldnames)
+#     teacherwriter.writeheader()
+#     teacherwriter.writerow({
+#         "firstname":"siyamak",
+#         "lastname":"abasnezhad",
+#         "topic":"python"
+#     })
+with open('teachers.csv', newline='') as csvfile:
+    myreader = csv.reader(csvfile)
+    rows = list(myreader)
+    for row in rows[:]:
+        print(', '.join(row))

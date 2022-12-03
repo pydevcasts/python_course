@@ -1,0 +1,12 @@
+Abasnezhad, Siyamak	Siyamak@poing.com	(555) 555-5555	Teacher, poing	@SiyamakAbasnezhad
+McFarland, Dave	dave@poing.com	(555) 555-5554	Teacher, poing
+Arthur, King	king_arthur@camelot.co.uk		King, Camelot
+Österberg, Sven-Erik	governor@norrbotten.co.se		Governor, Norrbotten	@sverik
+, Tim	tim@killerrabbit.com		Enchanter, Killer Rabbit Cave
+Carson, Ryan	ryan@poing.com	(555) 555-5543	CEO, poing	@ryancarson
+Doctor, The	doctor+companion@tardis.co.uk		Time Lord, Gallifrey
+Exampleson, Example	me@example.com	555-555-5552	Example, Example Co.	@example
+Hassan, Rohani	president@ir.gov	555 555-5551	President, Iran 	@unknown
+Chalkley, Andrew	andrew@poing.com	(555) 555-5553	Teacher, poing	@chalkers
+Vader, Darth	darth-vader@empire.gov	(555) 555-4444	Sith Lord, Galactic Empire	@darthvader
+Fernández de la Vega Sanz, María Teresa	mtfvs@spain.gov		First Deputy Prime Minister, Spanish Govt.
