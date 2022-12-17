@@ -104,3 +104,46 @@ import numpy as np
 # print(np.save('test.npy',data))
 # print(np.load('test.npy'))
 # ============================
+# A = np.array( [[1,1],[0,1]] )
+# B = np.array( [[2,0],[3,4]] )
+# # print(A*B) # ضرب در سطح عناصر
+
+# print(np.dot(A,B)) # ضرب در سطح ماتریس
+# ==============================
+# def f(x,y):
+#     return 10*x+y
+
+# b = np.fromfunction(f,(5,4),dtype=int)
+# # print(b[1,])
+# print(np.vstack(b))
+# =========================
+import numpy as np 
+a = np.array([[1, 2], 
+              [3, 4]]) 
+b = np.array([[5, 6], 
+              [7, 8]]) 
+# vertical stacking 
+# print("Vertical stacking:\n", np.vstack((a, b))) 
+# horizontal stacking 
+# # print("\nHorizontal stacking:\n", np.hstack((a, b))) 
+# c = [5, 6] 
+# # # stacking columns 
+# print("\nColumn stacking:\n", np.column_stack((a, c))) 
+# # concatenation method  
+# print("\nConcatenating to 2nd axis:\n", np.concatenate((a, b), 1)) 
+# =============================================================
+import numpy as np 
+# a = np.array([[1, 3, 5, 7, 9, 11], 
+#               [2, 4, 6, 8, 10, 12]]) 
+# # horizontal splitting 
+# print("Splitting along horizontal axis into 2 parts:\n", np.hsplit(a, 2)) 
+# # vertical splitting 
+# print("\nSplitting along vertical axis into 2 parts:\n", np.vsplit(a, 2))
+# ======================================
+# import numpy as np
+# arr = np.array([1, 2, 3])
+# for x in np.nditer(arr, flags=['buffered'], op_dtypes=['S']):
+#   print(x)
+import numpy as np
+e  = np.array([(1,2,3), (4,5,6)])
+print(e[:,1])
