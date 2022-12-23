@@ -117,11 +117,11 @@ import numpy as np
 # # print(b[1,])
 # print(np.vstack(b))
 # =========================
-import numpy as np 
-a = np.array([[1, 2], 
-              [3, 4]]) 
-b = np.array([[5, 6], 
-              [7, 8]]) 
+# import numpy as np 
+# a = np.array([[1, 2], 
+#               [3, 4]]) 
+# b = np.array([[5, 6], 
+#               [7, 8]]) 
 # vertical stacking 
 # print("Vertical stacking:\n", np.vstack((a, b))) 
 # horizontal stacking 
@@ -132,7 +132,7 @@ b = np.array([[5, 6],
 # # concatenation method  
 # print("\nConcatenating to 2nd axis:\n", np.concatenate((a, b), 1)) 
 # =============================================================
-import numpy as np 
+# import numpy as np 
 # a = np.array([[1, 3, 5, 7, 9, 11], 
 #               [2, 4, 6, 8, 10, 12]]) 
 # # horizontal splitting 
@@ -144,6 +144,72 @@ import numpy as np
 # arr = np.array([1, 2, 3])
 # for x in np.nditer(arr, flags=['buffered'], op_dtypes=['S']):
 #   print(x)
-import numpy as np
-e  = np.array([(1,2,3), (4,5,6)])
-print(e[:,1])
+# import numpy as np
+# e  = np.array([(1,2,3), (4,5,6)])
+# print(e[:,1])
+
+# ===================================
+# import numpy as np 
+# import matplotlib.pyplot as plt 
+# # x co-ordinates 
+# x = np.arange(0, 9) 
+# A = np.array([x, np.ones(9)]) 
+# # linearly generated sequence 
+# y = [19, 20, 20.5, 21.5, 22, 23, 23, 25.5, 24] 
+# # obtaining the parameters of regression line 
+# w = np.linalg.lstsq(A.T, y)[0]  
+# # plotting the line 
+# line = w[0]*x + w[1] # regression line 
+# plt.plot(x, line, 'r-') 
+# plt.plot(x, y, 'o') 
+# plt.show()
+# =================================
+# import numpy as np
+# A = np.matrix(np.ones((4,4)))
+# np.array(A)[2]=2
+# print(A)
+# np.asarray(A)[2]=2
+# print(A)
+# =================
+# import py_compile
+# import os
+# x = py_compile.compile('Numpy/demo.txt')
+# print(x)
+# =======================
+# with open('Numpy/demo.txt', 'rb') as f:
+#     s = f.read()
+#     print(s)
+# s.find(b'\xff\xc0')
+# print(s)
+# ================
+import string
+
+char_ints = [ord(c) for c in string.ascii_letters]
+
+with open("demo.txt", "wb") as fo:
+    with open("demo.txt", "rb") as fi:
+
+        # Read bytes but only keep letters.
+        chars = []
+        for b in fi.read():
+            if b in char_ints:
+                chars.append(chr(b))
+            else:
+                chars.append(" ")
+
+        # Search for 'ABC' in the read letters.
+        pos = "".join(chars).index("ABC")
+
+        # We now know the position of the intersting byte.
+        pos_x = pos + len("ABC") + 3 # known offset
+
+        # Now copy all bytes from the input to the output, ...
+        fi.seek(0)
+        i = 0
+        for b in fi.read():
+            # ... but replace the intersting byte.
+            if i == pos_x:
+                fo.write(b"Y")
+            else:
+                fo.write(bytes([b]))
+            i = i + 1
