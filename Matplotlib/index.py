@@ -122,45 +122,85 @@ import matplotlib.pyplot as plt
 # # function to show the plot 
 # plt.show() 
 # ===============================
-import matplotlib.pyplot as plt 
-import numpy as np 
-# function to generate coordinates 
-def create_plot(ptype): 
-	# setting the x-axis vaues 
-	x = np.arange(-10, 10, 0.01) 
-	# setting the y-axis values 
-	if ptype == 'linear': 
-		y = x 
-	elif ptype == 'quadratic': 
-		y = x**2
-	elif ptype == 'cubic': 
-		y = x**3
-	elif ptype == 'quartic': 
-		y = x**4
-	return(x, y) 
-# setting a style to use 
-plt.style.use('fivethirtyeight') 
-# create a figure 
-fig = plt.figure() 
-# define subplots and their positions in figure 
-plt1 = fig.add_subplot(331) 
-plt2 = fig.add_subplot(332) 
-plt3 = fig.add_subplot(333) 
-plt4 = fig.add_subplot(336) 
-# plotting points on each subplot 
-x, y = create_plot('linear') 
-plt1.plot(x, y, color ='r') 
-plt1.set_title('$y_1 = x$') 
-x, y = create_plot('quadratic') 
-plt2.plot(x, y, color ='b') 
-plt2.set_title('$y_2 = x^2$') 
-x, y = create_plot('cubic') 
-plt3.plot(x, y, color ='g') 
-plt3.set_title('$y_3 = x^3$') 
-x, y = create_plot('quartic') 
-plt4.plot(x, y, color ='k') 
-plt4.set_title('$y_4 = x^4$') 
-# adjusting space between subplots 
-fig.subplots_adjust(hspace=.5,wspace=0.5) 
-# function to show the plot 
+# import matplotlib.pyplot as plt 
+# import numpy as np 
+# # # function to generate coordinates 
+# def create_plot(ptype): 
+# 	# setting the x-axis vaues 
+# 	x = np.arange(-10, 10, 0.01) 
+# 	# setting the y-axis values 
+# 	if ptype == 'linear': 
+# 		y = x 
+# 	elif ptype == 'quadratic': 
+# 		y = x**2
+# 	elif ptype == 'cubic': 
+# 		y = x**3
+# 	elif ptype == 'quartic': 
+# 		y = x**4
+# 	return(x, y) 
+# # setting a style to use 
+# plt.style.use('fivethirtyeight') 
+# # create a figure 
+# fig = plt.figure() 
+# # define subplots and their positions in figure 
+# plt1 = fig.add_subplot(331) 
+# plt2 = fig.add_subplot(332) 
+# plt3 = fig.add_subplot(333) 
+# plt4 = fig.add_subplot(334) 
+# # plotting points on each subplot 
+# x, y = create_plot('linear') 
+# plt1.plot(x, y, color ='r') 
+# plt1.set_title('$y_1 = x$') 
+# x, y = create_plot('quadratic') 
+# plt2.plot(x, y, color ='b') 
+# plt2.set_title('$y_2 = x^2$') 
+# x, y = create_plot('cubic') 
+# plt3.plot(x, y, color ='g') 
+# plt3.set_title('$y_3 = x^3$') 
+# x, y = create_plot('quartic') 
+# plt4.plot(x, y, color ='k') 
+# plt4.set_title('$y_4 = x^4$') 
+# # adjusting space between subplots 
+# fig.subplots_adjust(hspace=.5,wspace=0.5) 
+# # function to show the plot 
+# plt.show()
+# ================================================
+from mpl_toolkits import mplot3d
+import numpy as np
+import matplotlib.pyplot as plt
+# fig = plt.figure()
+# ax = plt.axes(projection='3d')
+# Data for a three-dimensional line
+# zline = np.linspace(0, 15, 1000)
+# xline = np.sin(zline)
+# yline = np.cos(zline)
+# ax.plot3D(xline, yline, zline, 'gray')
+# # Data for three-dimensional scattered points
+# zdata = 15 * np.random.random(100)
+# xdata = np.sin(zdata) + 0.1 * np.random.randn(100)
+# ydata = np.cos(zdata) + 0.1 * np.random.randn(100)
+# ax.scatter3D(xdata, ydata, zdata, c=zdata, cmap='Greens');
+# =============================================
+def f(x, y):
+    return np.sin(np.sqrt(x ** 2 + y ** 2))
+x = np.linspace(-6, 6, 30)
+y = np.linspace(-6, 6, 30)
+X, Y = np.meshgrid(x, y)
+
+Z = f(X, Y)
+# fig = plt.figure()
+# ax = plt.axes(projection='3d')
+# ax.contour3D(X, Y, Z, 50, cmap='binary')
+# ax.set_xlabel('x')
+# ax.set_ylabel('y')
+# ax.set_zlabel('z')
+# ax.view_init(60, 60)
+# ================================================
+fig = plt.figure()
+ax = plt.axes(projection='3d')
+# ax.plot_wireframe(X, Y, Z, color='black')
+# ax.set_title('wireframe')
+ax.plot_surface(X, Y, Z, rstride=1, cstride=1,
+                cmap='viridis', edgecolor='none')
+ax.set_title('surface')
 plt.show()
