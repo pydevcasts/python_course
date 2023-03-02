@@ -189,3 +189,8 @@
 # del student
 # del student[0:2]
 # student.clear()
+# =============================================
+# dictionary comperehentions
+# letter = ["a", "b", "c"]
+# arr = [1,2,3]
+# print({key.upper():value for key, value in zip(letter, arr)})
