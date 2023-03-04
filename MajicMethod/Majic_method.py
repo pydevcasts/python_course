@@ -115,3 +115,42 @@ __missing__: only use for dict if key is missed
 # print(m['name'])
 # print(m['age'])
 # print(m['color'])
+# ============================================
+"""
+__call__  intance of class will be a funcion
+"""
+# class N:
+#     def __call__(self, *args: any, **kwds: any) -> any:
+#         print(f"hello call ....{args}-{self}")
+# n = N()
+# n("siyamak")
+# ===============================================
+"""
+__bool__
+"""
+# class N:
+#     def foo(self):
+#         print("")
+    
+#     def __len__(self):
+#         return False
+
+# n = N()
+# print(bool(n))
+# ----------------------------------------------
+class N:
+    def __init__(self, name):
+        self.name = name
+
+    def foo(self):
+        print(self.name)
+    
+    def __bool__(self):
+        return False
+
+n = N("saed")
+if n:
+    n.foo()
+    print (True)
+else:
+    print(False)
