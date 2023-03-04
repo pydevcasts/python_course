@@ -138,19 +138,28 @@ __bool__
 # n = N()
 # print(bool(n))
 # ----------------------------------------------
-class N:
-    def __init__(self, name):
-        self.name = name
+# class N:
+#     def __init__(self, name):
+#         self.name = name
 
-    def foo(self):
-        print(self.name)
+#     def foo(self):
+#         print(self.name)
     
-    def __bool__(self):
-        return False
+#     def __bool__(self):
+#         return False
 
-n = N("saed")
-if n:
-    n.foo()
-    print (True)
-else:
-    print(False)
+# n = N("saed")
+# if n:
+#     n.foo()
+#     print (True)
+# else:
+#     print(False)
+# ==========================================
+"""
+__getattr__
+"""
+class N:
+    name = "siyamak"
+
+n = N()
+print(n.name)
