@@ -157,9 +157,49 @@ __bool__
 # ==========================================
 """
 __getattr__
-"""
-class N:
-    name = "siyamak"
 
-n = N()
-print(n.name)
+"""
+# class N:
+#     name = "siyamak"
+#     age = 41
+#     def __getattr__(self, item):
+#         return f"{item} doesnot exists"
+#     """This is priority whole of your code"""
+#     def __getattribute__(self,item):
+#         if item == "age":
+#             return super().__getattribute__(item) + 1
+#         else:
+#             return f"{item} doesnot exists2"
+        
+
+# n = N()
+# print(n.age)
+# # print(n.name)
+# =============================================
+"""
+__setattr__
+"""
+# class N:
+#     name = "sia"
+#     def __setattr__(self,key, value):
+#         if key == "age":
+#             print("You cannot set att")
+#         return super().__setattr__(key, value)
+# n = N()
+# n.name = "ali"
+# print(n.name)
+# ================================================
+"""
+__delattr__
+"""
+# class N:
+#     age = 42
+#     def __delattr__(self,key):
+#         if key == "age":
+#             print("You cannot delete key")
+#         else:
+#             return super().__delattr__(key)
+# n = N()
+# n.name = "siyamak"
+# del n.name 
+# print(n.name)
