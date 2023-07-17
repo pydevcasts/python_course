@@ -3,16 +3,19 @@
 #   "model": "Mustang",
 #   "year": 1964
 # }
-# x = thisdict["model"]
+# x = thisdict
 # print(x)
+
 # ===============================
 
-
+#i want to show to you dict are mutable
 # thisdict =	{
 #   "brand": "Ford",
 #   "model": "Mustang",
 #   "year": 1964
 # }
+# thisdict["brand"] = "pride"
+
 
 # thisdict["year"] = 2018
 
@@ -33,8 +36,8 @@
 #   "model": "Mustang",
 #   "year": 1964
 # }
-# for x in thisdict:
-#   print(thisdict[x])
+# for x in thisdict:#->keys
+#   print(thisdict[x])#->value
 # ===============================
 
 
@@ -72,7 +75,7 @@
 #   "model": "Mustang",
 #   "year": 1964
 # }
-# thisdict.pop("brand") required to be having a argument but in list is not nessery istead we run popitem()
+# thisdict.pop("brand") #required to be having a argument but in list is not nessery istead we run popitem()
 # print(thisdict)
 # =======================================
 
@@ -93,14 +96,14 @@
 # del thisdict["model"]
 # print(thisdict)
 # =====================================
-
+#shallowcopy deepcopy
 # thisdict = {
 #   "brand": "Ford",
 #   "model": "Mustang",
 #   "year": 1964
 # }
 # mydict = thisdict.copy()
-# print(mydict == thisdict)
+# print(mydict is thisdict)
 # =================================
 
 # thisdict = {
@@ -108,7 +111,8 @@
 #   "model": "Mustang",
 #   "year": 1964
 # }
-# mydict = dict(thisdict)
+# mydict = dict(thisdict) 
+# print(mydict)
 # print(mydict is thisdict)
 # =====================================
 
@@ -130,24 +134,24 @@
 # print(myfamily)
 # ========================================
 
-# child1 = {
-#   "name" : "Emil",
-#   "year" : 2004
-# }
-# child2 = {
-#   "name" : "Tobias",
-#   "year" : 2007
-# }
-# child3 = {
-#   "name" : "Linus",
-#   "year" : 2011
-# }
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
 
-# myfamily = {
-#   "child1" : child1,
-#   "child2" : child2,
-#   "child3" : child3
-# }
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
 
 # print(myfamily)
 # =======================================
@@ -158,9 +162,9 @@
 
 # ========================================
 
-# dict1 = {"key1":1, "key2":2}
-# dict2 = {"key2":2, "key1":1}
-# print(dict1 == dict2)
+dict1 = {"key1":1, "key2":2}
+dict2 = {"key2":2, "key1":1}
+print(dict1 is dict2)
 # ===============================
 # Dictionary keys must be immutable
 
@@ -168,11 +172,12 @@
 # False
 # ==============================
 # Select the all correct way to remove the key marks from a dictionary
-# student = { 
-#   "name": "Emma", 
-#   "class": 9, 
-#   "marks": 75 
-# }
+student = { 
+  "name": "Emma", 
+  "class": 9, 
+  "marks": 75 
+}
+# print(student.remove("class"))
 
 # 1-student.pop("marks")
 # 2 -del student["marks"]
@@ -186,11 +191,17 @@
 #   "class": 9, 
 #   "marks": 75 
 # }
-# del student
-# del student[0:2]
-# student.clear()
+# # del student
+# del student[0:2] #unhashable
+# # student.clear()
+# print(student)
 # =============================================
 # dictionary comperehentions
 # letter = ["a", "b", "c"]
 # arr = [1,2,3]
 # print({key.upper():value for key, value in zip(letter, arr)})
+# =====================================
+myd = {"name":"nasim", 1:"fateme", "family":"heydari"} #unhashable
+print(myd)
+# mutable == unhashble
+#unmutable == hashable

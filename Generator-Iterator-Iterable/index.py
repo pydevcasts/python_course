@@ -1,7 +1,7 @@
-x = [1,2,3]
-lister = x.__iter__()
+# x = [1,2,3]
+# lister = x.__iter__()
 # print(type(lister))
-# # print(iter(x))
+# print(iter(x))
 # lister.__next__()
 # print(type(lister))
 # listitor = lister.__next__()
@@ -90,5 +90,8 @@ lister = x.__iter__()
 # print(f.__next__())
 
 x = (i for i in range(10))
-print(x.__iter__())
+# print(x.__iter__())
+print(x.__next__())
+print(x.__next__())
+print(x.__next__())
 print(x.__next__())

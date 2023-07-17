@@ -153,3 +153,26 @@
 # dir(list)
 # 'append', 'clear', 'copy', 'count', 
 # 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort'
+
+# if 5 > 2:
+#     print("5 big than 2")
+# elif 2 > 5:
+#     print("sdfgasf")
+# else:
+#     print("5 not big than 2")
+
+# ==================================
+# مرجع قدیمی به سطل اشغال میرود و مرجع جدید مقدار جدید میگیرد
+x = [1,2,3]
+print(id(x))
+print(id(x[0]), id(x[1]), id(x[2]))
+x[0] = 55
+print(id(x[0]), id(x[1]), id(x[2]))
+print(id(x))
+
+# =================================================
+# اما در ایمیوتیبل برعکس
+# a = 2
+# print(id(2))
+# a = 3
+# print(id(a))

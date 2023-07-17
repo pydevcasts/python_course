@@ -6,6 +6,7 @@ print("Roll number is:", roll_no)
 print(type(roll_no))  
 # output class 'int'
 
+
 # store integer using int() class
 id = int(25)
 print(id)  # 25

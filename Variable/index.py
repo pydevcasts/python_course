@@ -213,7 +213,7 @@ b = 20
 c = 20
 d = 40
 tuple1 = a, b, c, d # Packing tuple
-print(t) # (10, 20, 20, 40)
+print(tuple) # (10, 20, 20, 40)
 # ====================================
 # unpacking
 
@@ -247,7 +247,12 @@ print(Student.school_name)
 
 # ======================================================
 
-
+"""
+This is a comment
+written in
+more than just one line
+"""
+print("hello my python ")
 
 
 

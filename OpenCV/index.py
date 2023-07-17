@@ -1,4 +1,4 @@
-# import matplotlib.pyplot as plt  
+import matplotlib.pyplot as plt  
 # # %matplotlib inline
        
 # from skimage import data,filters

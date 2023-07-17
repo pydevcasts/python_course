@@ -8,15 +8,15 @@
 
 import keyword
 print(keyword.kwlist)
-print(keyword.iskeyword('if'))
-print(keyword.iskeyword('range'))
+# print(keyword.iskeyword('if'))
+# print(keyword.iskeyword('range'))
 
 
 
 # Understand Any keyword
 # The python help() function is used to display the documentation of modules, functions, classes, keywords.
 
-print(help('if'))
+# print(help('if'))
 
 # =============================================
 

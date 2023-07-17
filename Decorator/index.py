@@ -1,64 +1,66 @@
-import datetime
-
-
-# class Person:
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
-    
-#     def show(self):
-#         print(f"{self.name} is {self.age} years old")
-
-#     @classmethod
-#     def birth(cls, name, age):
-#         return cls(name, datetime.datetime.now().year - age)
-
-
-    
-# p = Person.birth("siyamak", 1981)
-# p.show()
-    
-# ================================================
-
-# class Person:
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
-    
-#     def show(self):
-#         print(f"{self.name} is {self.age} years old")
-
-#     @classmethod
-#     def birth(cls, name, age):
-#         return cls(name, datetime.datetime.now().year - age)
-
-#     @staticmethod
-#     def is_adult(age):
-#         if age > 35:
-#             print("young adoult")
-#         else:
-#             print("he is teen")
-
-# p = Person.is_adult(42)
-# ==========================================
-import functools
-def foo(v1):
-    def auter_uper(func):
-        @functools.wraps(func)
+def auter_uper(func):
         def bar():
-            """this is docstring for test"""
             return(func().upper())
         return bar
-    return auter_uper
 
-@foo("amir")
+@auter_uper
 def moo():
     """ this is docstrig by moo func"""
     return("hello siymak ...")
-print(moo.__name__)
-print(moo.__doc__)
+print(moo())
 
-"""
-without functools will got doc and name of obove of func
-"""
 # ==========================================
+
+# import time
+# import math
+
+# def calculate_time(func):
+# 	def inner1(*args, **kwargs):
+# 		begin = time.time()
+# 		func(*args, **kwargs)
+# 		end = time.time()
+# 		print("Total time taken in : ", func.__name__, end - begin)
+# 	return inner1
+
+
+# @calculate_time
+# def factorial(num):
+# 	time.sleep(2)
+# 	print(math.factorial(num))
+
+# factorial(10)
+# =================================
+# def hello_decorator(func):
+# 	def inner1(*args, **kwargs):
+# 		return func(*args, **kwargs)
+# 	return inner1
+
+
+# @hello_decorator
+# def sum_two_numbers(a, b):
+# 	return a + b
+
+# print("Sum =", sum_two_numbers(1, 2))
+# ======================================
+# import functools
+# def foo(v1):
+#     def auter_uper(func):
+#         @functools.wraps(func)
+#         def bar():
+#             """this is docstring for test"""
+#             return(func().upper())
+#         return bar
+#     return auter_uper
+
+# @foo("amir")
+# def moo():
+#     """ this is docstrig by moo func"""
+#     return("hello siymak ...")
+# print(moo.__name__)
+# print(moo.__doc__)
+
+# """
+# without functools will got doc and name of obove of func
+# """
+# ==========================================
+

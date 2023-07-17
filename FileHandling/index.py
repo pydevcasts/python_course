@@ -17,28 +17,20 @@
 # ====================================
 
 # f = open("demofile.txt", "r")
-# print(f.read(5))
+# print(f.read(20))
 # # =================================
 
 # f = open("demofile.txt", "r")
 # print(f.readline())
-
-# # ===============================
-
-# f = open("demofile.txt", "r")
-
 # print(f.readline())
 # print(f.readline())
+
 # # ===============================
 # f = open("demofile.txt", "r")
+# # print(type(f))
 # for x in f:
-#   print(x)
+#   print(type(x))
 # # ===========================
-# f = open("demofile.txt", "r")
-# print(f.readline())
-# f.close()
-
-# # =============================
 
 # # "x" - Create - will create a file, returns an error if the file exist
 
@@ -47,10 +39,12 @@
 # # "w" - Write - will create a file if the specified file does not exist
 # # ======================================
 
-# f = open("demofile.txt", "a")
-# f.write("Now the file has more content!")
-# f.close()
+f = open("demofile3.txt", "w")
+f.write("this is w mode text by zahra")
+f.close()
 
+with open("hello.txt", "w") as f:
+    f.write("this is w mode text by zahra")
 # #open and read the file after the appending:
 # f = open("demofile2.txt", "r")
 # print(f.read())
@@ -87,8 +81,8 @@ import csv
 #         "lastname":"abasnezhad",
 #         "topic":"python"
 #     })
-with open('teachers.csv', newline='') as csvfile:
-    myreader = csv.reader(csvfile)
-    rows = list(myreader)
-    for row in rows[:]:
-        print(', '.join(row))
+# with open('teachers.csv', newline='') as csvfile:
+#     myreader = csv.reader(csvfile)
+#     rows = list(myreader)
+#     for row in rows[:]:
+#         print(', '.join(row))

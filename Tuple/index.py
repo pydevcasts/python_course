@@ -1,9 +1,9 @@
 #  تاپل‌ها در واقع لیست‌های غیر قابل تغییر هستند، 
 # نمیتوان اندیسهاشو تغییر داد ایمیوتیبل هستن
 
-# mytuple = ("apple", "benana", "cherry")
+# x = ("apple", "benana", "cherry")
 
-# for i in mytuple:
+# for i in x:
 #     print(i)
 
 # ======================================
@@ -23,7 +23,9 @@
 
 # ================================
 
-# mytuple = ("apple", "benana", "cherry")
+# mytuple = ("apple", "benana", "cherry") + ("kiwi", "orange")
+
+# print(mytuple)
 # mylist = list(mytuple)
 # mylist.append("kiwi")
 # thistuple = tuple(mylist)

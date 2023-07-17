@@ -27,9 +27,9 @@
 
 
 
-# bool("abc")
-# bool(123)
-# bool(["apple", "cherry", "banana"])
+# print(bool("abc"))
+# print(bool(123))
+# print(bool(["apple", "cherry", "banana"]))
 
 
 
@@ -54,5 +54,10 @@
 
 
 
-x = 200
-print(isinstance(x, int))
+# x = 200
+# print(isinstance(x, int))
+
+
+# x = [5,8,9,6,3,4]
+# for i in range(1,5): #8,9,6
+#     print(x[i])

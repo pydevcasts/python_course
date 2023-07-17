@@ -30,10 +30,10 @@ import numpy as np
 # # accessing a element using index element
 # print(ser[16])
 # ===================================
-# df = pd.read_csv("nba.csv")  
-# ser = pd.Series(df['Name']) 
-# data = ser.head(10)
-# # print(data)
+df = pd.read_csv("nba.csv")  
+ser = pd.Series(df['Name']) 
+data = ser.head(10)
+print(data)
 # print(data[2:4])
 # print(data.loc[2:4])
 # print(data.iloc[2:4])

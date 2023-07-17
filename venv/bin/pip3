@@ -1,4 +1,4 @@
-#!/home/siyamak/Documents/mahdy-mohseni/venv/bin/python
+#!/home/siyamak/Documents/Python-Course/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
