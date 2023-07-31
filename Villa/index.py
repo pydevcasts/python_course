@@ -31,6 +31,7 @@
 
 
 from selenium import webdriver
+
 # مسیر فایل درایور مرورگر را تعیین کنید
 driver_path = '/home/siyamak/Documents/Python-Course/Villa/chromedriver_linux64/chromedriver'
 # ایجاد نمونه از مرورگر Chrome با استفاده از درایور مرورگر

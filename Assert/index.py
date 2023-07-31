@@ -4,7 +4,7 @@
 
 event = []
 def foo(arr):
-    assert arr not in event
+    assert arr not in event,"event not be repeated"
     event.append(arr)
 foo(1)
 foo(2)

@@ -1,5 +1,6 @@
 import os
-
+# # -----------------------------------------
+import pathlib
 
 # folder = "HS"
 
@@ -41,8 +42,6 @@ import os
 #     break
 
 
-# # -----------------------------------------
-import pathlib
 
 # print(dir(pathlib))
 # print(pathlib.WindowsPath)

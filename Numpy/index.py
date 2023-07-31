@@ -1,4 +1,40 @@
 
+# ===================================
+# import numpy as np 
+# import matplotlib.pyplot as plt 
+# # x co-ordinates 
+# x = np.arange(0, 9) 
+# A = np.array([x, np.ones(9)]) 
+# # linearly generated sequence 
+# y = [19, 20, 20.5, 21.5, 22, 23, 23, 25.5, 24] 
+# # obtaining the parameters of regression line 
+# w = np.linalg.lstsq(A.T, y)[0]  
+# # plotting the line 
+# line = w[0]*x + w[1] # regression line 
+# plt.plot(x, line, 'r-') 
+# plt.plot(x, y, 'o') 
+# plt.show()
+# =================================
+# import numpy as np
+# A = np.matrix(np.ones((4,4)))
+# np.array(A)[2]=2
+# print(A)
+# np.asarray(A)[2]=2
+# print(A)
+# =================
+# import py_compile
+# import os
+# x = py_compile.compile('Numpy/demo.txt')
+# print(x)
+# =======================
+# with open('Numpy/demo.txt', 'rb') as f:
+#     s = f.read()
+#     print(s)
+# s.find(b'\xff\xc0')
+# print(s)
+# ================
+import string
+
 import numpy as np
 
 # x = np.array([[1, 1],[2, 2], [3,3]])
@@ -148,41 +184,6 @@ import numpy as np
 # e  = np.array([(1,2,3), (4,5,6)])
 # print(e[:,1])
 
-# ===================================
-# import numpy as np 
-# import matplotlib.pyplot as plt 
-# # x co-ordinates 
-# x = np.arange(0, 9) 
-# A = np.array([x, np.ones(9)]) 
-# # linearly generated sequence 
-# y = [19, 20, 20.5, 21.5, 22, 23, 23, 25.5, 24] 
-# # obtaining the parameters of regression line 
-# w = np.linalg.lstsq(A.T, y)[0]  
-# # plotting the line 
-# line = w[0]*x + w[1] # regression line 
-# plt.plot(x, line, 'r-') 
-# plt.plot(x, y, 'o') 
-# plt.show()
-# =================================
-# import numpy as np
-# A = np.matrix(np.ones((4,4)))
-# np.array(A)[2]=2
-# print(A)
-# np.asarray(A)[2]=2
-# print(A)
-# =================
-# import py_compile
-# import os
-# x = py_compile.compile('Numpy/demo.txt')
-# print(x)
-# =======================
-# with open('Numpy/demo.txt', 'rb') as f:
-#     s = f.read()
-#     print(s)
-# s.find(b'\xff\xc0')
-# print(s)
-# ================
-import string
 
 char_ints = [ord(c) for c in string.ascii_letters]
 

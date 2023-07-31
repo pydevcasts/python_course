@@ -27,6 +27,12 @@
 #             return(func().upper())
 #         return bar
 
+# def outer_split(func):
+#     def inner_split():
+#         return func().split(" ")
+#     return inner_split
+
+# @outer_split
 # @auter_uper
 # def moo():
 #     """ this is docstrig by moo func"""

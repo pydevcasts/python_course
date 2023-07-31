@@ -1,4 +1,30 @@
-import matplotlib.pyplot as plt  
+import sys
+
+# from PIL import ImageEnhance  
+# enh = ImageEnhance.Contrast(im)  
+# enh.enhance(1.8).show("30% more contrast")
+# ====================================
+# import cv2
+# gray_img = cv2.imread('/home/siyamak/Pictures/Image-Processing-Python-Fig04.png.webp', cv2.IMREAD_GRAYSCALE)
+# cv2.imshow('Grayscale', gray_img)
+# cv2.waitKey()
+# cv2.imwrite('watchgray.webp', gray_img)
+# cv2.waitKey()
+# ===================================
+import cv2
+# from skimage import data
+import matplotlib.pyplot as plt
+# plt.show()
+# ======================================
+import numpy as np
+from scipy import misc
+# mask = image < 87  
+# image[mask]=25 
+# plt.imshow(image, cmap='gray')
+# plt.show()
+# ===================================
+from scipy.ndimage import gaussian_filter
+
 # # %matplotlib inline
        
 # from skimage import data,filters
@@ -46,24 +72,12 @@ import matplotlib.pyplot as plt
 # # ax3.autoscale(False)
 # ax3.plot(x, y, 'o', markeredgecolor='r', markerfacecolor='none', markersize=10)
 
-# plt.show()
-# ======================================
-import numpy as np
-# from skimage import data
-import matplotlib.pyplot as plt
 # # %matplotlib inline
    
 # image = data.camera()  
 # type(image)
 # # numpy.ndarray #Image is a NumPy array: 
 
-# mask = image < 87  
-# image[mask]=25 
-# plt.imshow(image, cmap='gray')
-# plt.show()
-# ===================================
-from scipy.ndimage import gaussian_filter
-from scipy import misc
 
 # a = np.arange(50, step=2).reshape((5,5))
 # # gaussian_filter(a, sigma=1)
@@ -108,19 +122,6 @@ from scipy import misc
 # #Display image  
 # im.show()
    
-# from PIL import ImageEnhance  
-# enh = ImageEnhance.Contrast(im)  
-# enh.enhance(1.8).show("30% more contrast")
-# ====================================
-# import cv2
-# gray_img = cv2.imread('/home/siyamak/Pictures/Image-Processing-Python-Fig04.png.webp', cv2.IMREAD_GRAYSCALE)
-# cv2.imshow('Grayscale', gray_img)
-# cv2.waitKey()
-# cv2.imwrite('watchgray.webp', gray_img)
-# cv2.waitKey()
-# ===================================
-import cv2
-import numpy as np,sys
 
 A = cv2.imread('apple.jpg')
 B = cv2.imread('orange.jpg')

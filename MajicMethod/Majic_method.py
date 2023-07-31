@@ -40,7 +40,7 @@
 # #     print(foo.__annotations__.get('arg'))
 # #     print(type(arg))
 # # foo(10)
-# # foo("12")
+# foo("12")
 
 # # {'arg': <class 'int'>, 'return': <class 'str'>}
 # # <class 'int'>
@@ -49,20 +49,20 @@
 # # <class 'int'>
 # # <class 'str'>
 # # =================================
-# # class Base:
-# #     a: int = 3
-# #     b: str = 'abc'
+# class Base:
+#     a: int = 3
+#     b: str = 'abc'
 
-# # class Derived(Base):
-# #     print(Base.__annotations__)
+# class Derived(Base):
+#     print(Base.__annotations__)
 
-# # print(Derived.__annotations__)
+# Derived
 # # ===============================
-# # from __future__ import annotations
-# # def foo(a: "str"): 
-# #     pass
+# from __future__ import annotations
+# def foo(a: str): 
+#     pass
 
-# # print(foo.__annotations__)
+# print(foo.__annotations__)
 # # ===========================
 # # class Foo:
 # #     """
@@ -74,40 +74,13 @@
 # # print(n.__doc__)
 # # =========================
 
-# class N():
-#     def __init__(self, age):
-#         self.age = age
-        
-#     def foo(self):
-#         return self.age
-
-#     @staticmethod
-#     def bar(x, y):
-#         print(x + y)
-
-# n = N(5)
-# n.bar(55,4)
-# ==========================
-"""
-    __init_subclass__
-"""
-# class A:
-
-#     @classmethod #optional
-#     def __init_subclass__(cls, name):
-#         print("A is subclass B")
-#         print(name)
-    
-# class B(A, name = "ali"):
-#     pass
-# # ==================================
 """
 __missing__: only use for dict if key is missed
 """
 # class Mydict(dict):
   
 #     def __missing__(self, key):
-#         return key
+#         return key, "key is not exists"
 
 
 # m = Mydict({'name':'siyamak', 'age':32})
@@ -162,19 +135,26 @@ __getattr__
 # class N:
 #     name = "siyamak"
 #     age = 41
+
 #     def __getattr__(self, item):
 #         return f"{item} doesnot exists"
 #     """This is priority whole of your code"""
+
+
 #     def __getattribute__(self,item):
 #         if item == "age":
 #             return super().__getattribute__(item) + 1
+
+#         elif item == "name":
+#                 return f"the name of attr is :{super().__getattribute__(item)}"
 #         else:
-#             return f"{item} doesnot exists2"
+#             return "doest not exists"
+
         
 
 # n = N()
 # print(n.age)
-# # print(n.name)
+# print(n.names)
 # =============================================
 """
 __setattr__
@@ -183,7 +163,7 @@ __setattr__
 #     name = "sia"
 #     def __setattr__(self,key, value):
 #         if key == "age":
-#             print("You cannot set att")
+#             raise KeyError("you can change that")
 #         return super().__setattr__(key, value)
 # n = N()
 # n.name = "ali"

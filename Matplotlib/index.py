@@ -1,4 +1,74 @@
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
+import numpy as np
+# activities = ['eat', 'sleeps', 'work', 'play'] 
+# # portion covered by each label 
+# slices = [3, 7, 8, 9] 
+# # color for each label 
+# colors = ['r', 'y', 'g', 'b'] 
+# # plotting the pie chart 
+# plt.pie(slices, labels = activities, colors=colors, 
+# 		startangle=90, shadow = True, explode = (0, 0.0, 0.1, 0), 
+# 		radius = 1.2, autopct = '%1.2f%%') 
+# # plotting legend 
+# plt.legend() 
+# # showing the plot 
+# plt.show() 
+# # =======================================
+# import numpy as np 
+# # setting the x - coordinates 
+# x = np.arange(0, 2*(np.pi), 0.1)
+# print(x) 
+# # setting the corresponding y - coordinates 
+# y = np.sin(x) 
+# # potting the points 
+# plt.plot(x, y) 
+# # function to show the plot 
+# plt.show() 
+# ===============================
+# import matplotlib.pyplot as plt 
+# import numpy as np 
+# # # function to generate coordinates 
+# def create_plot(ptype): 
+# 	# setting the x-axis vaues 
+# 	x = np.arange(-10, 10, 0.01) 
+# 	# setting the y-axis values 
+# 	if ptype == 'linear': 
+# 		y = x 
+# 	elif ptype == 'quadratic': 
+# 		y = x**2
+# 	elif ptype == 'cubic': 
+# 		y = x**3
+# 	elif ptype == 'quartic': 
+# 		y = x**4
+# 	return(x, y) 
+# # setting a style to use 
+# plt.style.use('fivethirtyeight') 
+# # create a figure 
+# fig = plt.figure() 
+# # define subplots and their positions in figure 
+# plt1 = fig.add_subplot(331) 
+# plt2 = fig.add_subplot(332) 
+# plt3 = fig.add_subplot(333) 
+# plt4 = fig.add_subplot(334) 
+# # plotting points on each subplot 
+# x, y = create_plot('linear') 
+# plt1.plot(x, y, color ='r') 
+# plt1.set_title('$y_1 = x$') 
+# x, y = create_plot('quadratic') 
+# plt2.plot(x, y, color ='b') 
+# plt2.set_title('$y_2 = x^2$') 
+# x, y = create_plot('cubic') 
+# plt3.plot(x, y, color ='g') 
+# plt3.set_title('$y_3 = x^3$') 
+# x, y = create_plot('quartic') 
+# plt4.plot(x, y, color ='k') 
+# plt4.set_title('$y_4 = x^4$') 
+# # adjusting space between subplots 
+# fig.subplots_adjust(hspace=.5,wspace=0.5) 
+# # function to show the plot 
+# plt.show()
+# ================================================
+from mpl_toolkits import mplot3d
 
 # x = [1,2,3] 
 # # corresponding y axis values 
@@ -97,77 +167,6 @@ import matplotlib.pyplot as plt
 # plt.show() 
 # ================================
 
-# activities = ['eat', 'sleeps', 'work', 'play'] 
-# # portion covered by each label 
-# slices = [3, 7, 8, 9] 
-# # color for each label 
-# colors = ['r', 'y', 'g', 'b'] 
-# # plotting the pie chart 
-# plt.pie(slices, labels = activities, colors=colors, 
-# 		startangle=90, shadow = True, explode = (0, 0.0, 0.1, 0), 
-# 		radius = 1.2, autopct = '%1.2f%%') 
-# # plotting legend 
-# plt.legend() 
-# # showing the plot 
-# plt.show() 
-# # =======================================
-# import numpy as np 
-# # setting the x - coordinates 
-# x = np.arange(0, 2*(np.pi), 0.1)
-# print(x) 
-# # setting the corresponding y - coordinates 
-# y = np.sin(x) 
-# # potting the points 
-# plt.plot(x, y) 
-# # function to show the plot 
-# plt.show() 
-# ===============================
-# import matplotlib.pyplot as plt 
-# import numpy as np 
-# # # function to generate coordinates 
-# def create_plot(ptype): 
-# 	# setting the x-axis vaues 
-# 	x = np.arange(-10, 10, 0.01) 
-# 	# setting the y-axis values 
-# 	if ptype == 'linear': 
-# 		y = x 
-# 	elif ptype == 'quadratic': 
-# 		y = x**2
-# 	elif ptype == 'cubic': 
-# 		y = x**3
-# 	elif ptype == 'quartic': 
-# 		y = x**4
-# 	return(x, y) 
-# # setting a style to use 
-# plt.style.use('fivethirtyeight') 
-# # create a figure 
-# fig = plt.figure() 
-# # define subplots and their positions in figure 
-# plt1 = fig.add_subplot(331) 
-# plt2 = fig.add_subplot(332) 
-# plt3 = fig.add_subplot(333) 
-# plt4 = fig.add_subplot(334) 
-# # plotting points on each subplot 
-# x, y = create_plot('linear') 
-# plt1.plot(x, y, color ='r') 
-# plt1.set_title('$y_1 = x$') 
-# x, y = create_plot('quadratic') 
-# plt2.plot(x, y, color ='b') 
-# plt2.set_title('$y_2 = x^2$') 
-# x, y = create_plot('cubic') 
-# plt3.plot(x, y, color ='g') 
-# plt3.set_title('$y_3 = x^3$') 
-# x, y = create_plot('quartic') 
-# plt4.plot(x, y, color ='k') 
-# plt4.set_title('$y_4 = x^4$') 
-# # adjusting space between subplots 
-# fig.subplots_adjust(hspace=.5,wspace=0.5) 
-# # function to show the plot 
-# plt.show()
-# ================================================
-from mpl_toolkits import mplot3d
-import numpy as np
-import matplotlib.pyplot as plt
 # fig = plt.figure()
 # ax = plt.axes(projection='3d')
 # Data for a three-dimensional line
