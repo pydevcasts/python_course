@@ -100,3 +100,19 @@
 # TypeError: unhashable type: 'list'
 
 # {'text': 'salam', frozenset({'a', 'i', 'k', 'm', 's', 'y'}): 55, (1,): 999}
+
+
+
+
+
+def foo(a,b=1):
+    a = 2
+    b[0] = 3
+    # return a , b
+
+a = 33 #old refrence that is imutable
+b = [55] #old refrence that is mutable
+foo(a, b)
+print(a)
+print(b)
+

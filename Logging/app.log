@@ -1,2 +1,11 @@
+root - WARNING - This will get logged to a file
 WARNING:root:this is a warning
-WARNING:root:this is a warning
+root - WARNING - This will get logged to a file
+root - WARNING - This will get logged to a file
+2023-08-31 - Exception occurred
+2023-08-31 - Exception occurred
+Traceback (most recent call last):
+  File "/home/siyamak/Documents/Python-Course/Logging/index.py", line 35, in <module>
+    c = a / b
+ZeroDivisionError: division by zero
+2023-08-31 - example_logger - This is a warning
