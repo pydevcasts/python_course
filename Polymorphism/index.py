@@ -29,5 +29,5 @@ class Square(Shape):
 
 r = Rectangle(2, 3)
 print(r.area())
-s = Square
-print(s.area())
+# s = Square
+# print(s.area())

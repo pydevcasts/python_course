@@ -34,6 +34,7 @@ class A:
         print(self.name)
 
 
-a = A("siyamak")
+a = A("ali")
 print(a)
 a.show()
+# =====================================

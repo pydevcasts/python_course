@@ -112,3 +112,13 @@ print(dir(obj2))
 
 # Uncommenting obj2.call_private()
 # will also raise an AttributeError
+# ==========================================
+# # class N:
+# #     _age = 42
+# #     __name = "mohammad"
+# #     def foo(self):
+# #         return self._age, self.__name
+# # n = N()
+# # print(n.foo())
+# # print(N._age)
+# # print(N.__name__)

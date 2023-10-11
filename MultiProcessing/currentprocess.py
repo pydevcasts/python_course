@@ -10,6 +10,7 @@ def foo(name):
 
 pro1 = Process(target = foo, args=("siyamak",),name="first")
 pro2 = Process(target = foo, args=("diyana",),name = "secund")
+
 pro1.start()
 pro2.start()
 print(pro1.is_alive())

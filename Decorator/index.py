@@ -6,10 +6,10 @@ def my_decorator(func):
     return wrapper
 
 def say_whee():
-    print("Whee!")
+    return("Whee!")
 
 say_whee = my_decorator(say_whee)
-print(say_whee)
+print(say_whee())
 # ==============================================
 # def my_decorator(func):
 #     def wrapper():
