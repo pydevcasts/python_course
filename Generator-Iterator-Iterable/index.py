@@ -1,3 +1,31 @@
+
+# def foo(start, end):
+#     while start <= end:
+#         yield start
+#         start += 1
+# f = foo(1, 10)
+# # for i in f:
+#     # print(i)
+# print(f.__next__())
+# print(f.__next__())
+# print(f.__next__())
+# print(f.__next__())
+# print(f.__next__())
+# print(f.__next__())
+# print(f.__next__())
+# print(f.__next__())
+# print(f.__next__())
+# print(f.__next__())
+# print(f.__next__())
+
+# x = (i for i in range(10))
+# # print(x.__iter__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+
+# ============================================
 # x = [1,2,3]
 # lister = x.__iter__()
 # print(type(lister))
@@ -24,10 +52,11 @@
     
 #     def buy(self, shoes, bag):
 #         self.dict[shoes] = self.dict.get(shoes, 0) + bag
-    
-    # def __iter__(self):
-        # print(type(iter(self.dict.items())))
-        # return (iter(self.dict.items()))
+#         print(self.dict[shoes])
+
+#     def __iter__(self):
+#         print(type(iter(self.dict.items())))
+#         return iter(self.dict.items())
         
 #     def __next__(self):
 #         for key, value in self.dict.items():
@@ -37,13 +66,14 @@
 
 
 # n = N()
+
 # n.buy('bella', 48)
 # n.buy('meli', 46)
 # n.buy('nobi', 41)
 # n.buy('verda', 14)
-# print(next(n))
 # for index, staff in n:
-    # print(index, staff)
+#     print(index, staff)
+# # print(next(n))
 # ---------------------------------------------------------
 
 # class N:
@@ -70,28 +100,21 @@
 # print(next(n))
 # =============================================
 
-# def foo(start, end):
-#     while start <= end:
-#         yield start
-#         start += 1
-# f = foo(1, 10)
-# # for i in f:
-#     # print(i)
-# print(f.__next__())
-# print(f.__next__())
-# print(f.__next__())
-# print(f.__next__())
-# print(f.__next__())
-# print(f.__next__())
-# print(f.__next__())
-# print(f.__next__())
-# print(f.__next__())
-# print(f.__next__())
-# print(f.__next__())
+class N:
+    def __init__(self, num) -> None:
+        self.name = num
 
-x = (i for i in range(10))
-# print(x.__iter__())
-print(x.__next__())
-print(x.__next__())
-print(x.__next__())
-print(x.__next__())
+    def __iter__(self):
+        return iter(self.name)
+
+    def __next__(self):
+        for i in range(len(self.name)):
+            print(i)
+       
+
+n = N([1,2,3,4,5])
+for i in iter(n):
+    print(i)
+# next(n)
+
+# =======================================
