@@ -40,21 +40,7 @@
 # # <class 'int'>
 # # <class 'str'>
 # # =================================
-# class Base:
-#     a: int = 3
-#     b: str = 'abc'
 
-# class Derived(Base):
-#     print(Base.__annotations__)
-
-# Derived
-# # ===============================
-# from __future__ import annotations
-# def foo(a: str): 
-#     pass
-
-# print(foo.__annotations__)
-# # ===========================
 # # class Foo:
 # #     """
 # #     name is siyamak
@@ -239,3 +225,26 @@ __delattr__
 # n = N(20, 100)
 # m = N(4,100)
 # print(n>m)
+##############################################
+class Inventory:
+    
+    def __init__(self):
+        self.slots = []
+
+    def add(self, item):
+        self.slots.append(item)
+
+
+    def __len__(self):
+        return len(self.slots)
+
+    
+    def __contains__(self, item):
+        return item in self.slots
+    
+    def __iter__(self):
+        yield from self.slots
+
+
+    def __getitem__():
+        pass

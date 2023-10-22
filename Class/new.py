@@ -38,3 +38,13 @@ a = A("ali")
 print(a)
 a.show()
 # =====================================
+class Reversedstr(str):
+    
+    def __new__(self,name):
+        self = str.__new__(self,name)
+        self = self[::-1]
+        return self
+# >>>from reversedstr import Reversedstr
+# >>>hi = Reversedstr("siyamak")
+# >>>hi
+# #############################################################

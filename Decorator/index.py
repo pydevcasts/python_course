@@ -93,4 +93,3 @@ print(say_whee())
 # without functools will got doc and name of obove of func
 # """
 # ==========================================
-
