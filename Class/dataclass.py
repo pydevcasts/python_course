@@ -26,24 +26,25 @@
 from dataclasses import dataclass
 from typing import List
 
-@dataclass
-class Person:
-    name: str
-    age: int
+# @dataclass
+# class Person:
+#     name: str
+#     age: int
 
-@dataclass
-class Address:
-    street: str
-    city: str
+# @dataclass
+# class Address:
+#     street: str
+#     city: str
 
-@dataclass
-class Contact(Person, Address):
-    phone_numbers: List[str]
+# @dataclass
+# class Contact(Person, Address):
+#     phone_numbers: List[str]
 
-# Creating an instance of Contact
-contact = Contact(name="John", age=30, street="123 Main St", city="New York", phone_numbers=["123-456-7890"])
+# # Creating an instance of Contact
+# contact = Contact(name="John", age=30, street="123 Main St", city="New York", phone_numbers=["123-456-7890"])
 
-# Accessing properties of the Contact class
-print(contact.name)  # John
-print(contact.street)  # 123 Main St
-print(contact.phone_numbers)  # ['123-456-7890']
+# # Accessing properties of the Contact class
+# print(contact.name)  # John
+# print(contact.street)  # 123 Main St
+# print(contact.phone_numbers)  # ['123-456-7890']
+###################################################################3

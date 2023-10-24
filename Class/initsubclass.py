@@ -13,6 +13,16 @@
 # class C(A):
 #     pass
 # ==============================
+# class Parent:
+#     def __init_subclass__(cls):
+#         print(f'Subclass of Parent Created!{cls}')
+
+# class Child(Parent):
+#     pass
+
+# class Grandchild(Child):
+#     pass
+########################################
 # class A:
 #     @classmethod
 #     def __init_subclass__(cls) -> None:
@@ -34,3 +44,14 @@
 
 # class B(A, name = "siyamak"):
 #     pass
+##########################################
+class A:
+    def __init_subclass__(cls,**kwargs) -> None:
+        super.__init_subclass__(**kwargs)
+        cls.x = "daee doset dare"
+
+class B(A):
+    x = "diyana"
+
+b=B()
+print(b.x)
