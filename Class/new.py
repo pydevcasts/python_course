@@ -40,8 +40,8 @@ a.show()
 # =====================================
 class Reversedstr(str):
     
-    def __new__(self,name):
-        self = str.__new__(self,name)
+    def __new__(cls,name):
+        self = str.__new__(cls,name)
         self = self[::-1]
         return self
 # >>>from reversedstr import Reversedstr
