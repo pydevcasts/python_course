@@ -3,18 +3,6 @@
 # .group() returns the part of the string where there was a match
 
 
-# import re
-
-
-# #Check if the string starts with "The" and ends with "Spain":
-
-# txt = "The rain in Spain"
-# x = re.search("^The.*Spain$", txt)
-
-# if (x):
-#   print("YES! We have a match!")
-# else:
-#   print("No match")
 
 
 # d(0,9)
@@ -29,112 +17,235 @@
 # B not boundry
 # b boundry
 # ========================
-
-import re
-
 # #Return a list containing every occurrence of "ai":
-
 # txt = "The rain in Spain"
 # x = re.findall("ai", txt)
 # print(x)
-
 # ===================================
+# #The string property returns the search string:
+# txt = "The rain Bin pain"
+# x = re.search(r"\bB\w+", txt)
+# print(x.string)
 
-# import re
+###################################################
 
+# #Check if the string starts with "The" and ends with "Spain":
 # txt = "The rain in Spain"
-
-# #Check if "Portugal" is in the string:
-
+# x = re.search("^The.*Spain$", txt)
+# print(x.span())
+# (0, 17)
+########################################
+# txt = "The rain in Spain"
+# x = re.findall("ai", txt)
+# print(x)
+# output: ['ai', 'ai']
+########################################
+# txt = "The rain in Spain"
 # x = re.findall("Portugal", txt)
 # print(x)
-
-# if (x):
-#   print("Yes, there is at least one match!")
-# else:
-#   print("No match")
-
-# =================================
-
-
-# import re
-
+# []
+#######################################
 # txt = "The rain in Spain"
 # x = re.search("\s", txt)
 
-# print(x.start()) 
-
-# =================================
-
-# import re
+# print("""The first white-space character
+#        is located in position:""", x.start())
+# output:3
+################################################
 
 # txt = "The rain in Spain"
 # x = re.search("Portugal", txt)
 # print(x)
-# ========================
-
-# import re
-
-# #Split the string at every white-space character:
-
+# None
+#############################################
 # txt = "The rain in Spain"
 # x = re.split("\s", txt)
 # print(x)
+# ['The', 'rain', 'in', 'Spain']
+################################################
 
-# =============================
-
-# import re
-
-#Split the string at the first white-space character:
-
-txt = "The rain in Spain"
-x = re.split("\s", txt, 1)
-print(x)
-# ============================
-
-# import re
-
-# #Replace all white-space characters with the digit "9":
-
+# txt = "The rain in Spain"
+# x = re.split("\s", txt, 1)
+# print(x)
+# ['The', 'rain in Spain']
+#############################################
 # txt = "The rain in Spain"
 # x = re.sub("\s", "9", txt)
 # print(x)
-# =========================
-
-# import re
-
-# #Replace the first two occurrences of a white-space character with the digit 9:
-
+# The9rain9in9Spain
+#########################################
 # txt = "The rain in Spain"
 # x = re.sub("\s", "9", txt, 2)
 # print(x)
-# ==============================
-
-# import re
-
-# #Search for an upper case "S" character in the beginning of a word, and print its position:
-
+# The9rain9in Spain
+####################################
 # txt = "The rain in Spain"
 # x = re.search(r"\bS\w+", txt)
 # print(x.span())
-
-# ============================
-# import re
-
-# #The string property returns the search string:
-
-# txt = "The rain Bin pain"
-# x = re.search(r"\bB\w+", txt)
+# (12, 17)
+####################################
+# txt = "The rain in Spain"
+# x = re.search(r"\bS\w+", txt)
 # print(x.string)
-# =============================
-
-# import re
-
-# #Search for an upper case "S" character in the beginning of a word, and print the word:
-
+# The rain in Spain
+##################################
 # txt = "The rain in Spain"
 # x = re.search(r"\bS\w+", txt)
 # print(x.group())
+# .group() returns the part of the string where there was a match
+#######################################
+# txt = "The rAin in Spain"
+# #Find all lower case characters alphabetically between "a" and "m":
+# x = re.findall("[a-m]", txt)
+# print(x)
+# # ['h', 'e', 'a', 'i', 'i', 'a', 'i']
+#######################################
+# txt = "That will be 59 dollars"
+# x = re.findall("\d",txt)
+# print(x)
+#######################################
+# txt = "hello planet"
+# x = re.findall("he..o", txt)
+# print(x)
+########################################
+# txt = "hello planet"
+# #Check if the string starts with 'hello':
+# x = re.findall("^hello", txt)
+# if x:
+#   print("Yes, the string starts with 'hello'")
+# else:
+#   print("No match")
+###################################
+# txt = "hello planet"
+# #Check if the string ends with 'planet':
+# x = re.findall("planet$", txt)
+# if x:
+#   print("Yes, the string ends with 'planet'")
+# else:
+#   print("No match")
+######################################
+
+# txt = "hello planet"
+# x = re.findall("h.*o", txt)
+# print(x)
+####################################
+# txt = "hello planet"
+# x = re.findall("h.+o", txt)
+# print(x)
+####################################
+# txt = "The rain in Spain falls mainly in the plain!"
+# x = re.findall("falls|norsama", txt)
+# print(x)
+# if x:
+#   print("Yes, there is at least one match!")
+# else:
+#   print("No match")
+#######################################
+txt = "hello planet"
+# #Search for a sequence that starts with "he", followed excactly 2 (any) characters, and an "o":
+# x = re.findall("h.{3}o", txt)
+# print(x)
+######################################
+# x = re.findall("he..?o", txt)
+# print(x)
+#####################################
+# txt = "The rain in Spain"
+# #Return a match at every word character (characters from a to Z, digits from 0-9, and the underscore _ character):
+# x = re.findall("\w", txt)
+# print(x)
+######################################
+# txt = "The rain in Spain"
+# #Return a match at every word character (characters from a to Z, digits from 0-9, and the underscore _ character):
+# x = re.findall("\w", txt)
+# print(x)
+####################################
+# txt = "The rain@ in Spain"
+# #Return a match at every NON word character (characters NOT between a and Z. Like "!", "?" white-space etc.):
+# x = re.findall("\W", txt)
+# print(x)
+#####################################
+
+# txt = "The rain in Spain"
+# #Check if the string starts with "The":
+# x = re.findall("\AThe", txt)
+# print(x)
+###############################
+# txt = "The ain in Spain"
+#Check if "ain" is present at the beginning of a WORD:
+# x = re.findall(r"\bain", txt)
+# print(x)
+###############################
+# txt = "The rain in Spain"
+# #Check if "ain" is present at the end of a WORD:
+# x = re.findall(r"ain\b", txt)
+# print(x)
+######################################
+# txt = "The rain in Spain"
+# #Check if "ain" is present, but NOT at the beginning of a word:
+# x = re.findall(r"\Bain", txt)
+# print(x)
+#####################################
+# txt = "The raint in Spain"
+# #Check if "ain" is present, but NOT at the end of a word:
+# x = re.findall(r"ain\B", txt)
+# print(x)
+######################################
+# txt = "The rain in Spain"
+# #Check if the string contains any digits (numbers from 0-9):
+# x = re.findall("\d", txt)
+# print(x)
+########################################
+# txt = "The rain in Spain"
+# #Return a match at every no-digit character:
+# x = re.findall("\D", txt)
+# print(x)
+# ['T', 'h', 'e', ' ', 'r', 'a', 'i', 'n', ' ', 'i', 'n', ' ', 'S', 'p', 'a', 'i', 'n']
+########################################
+# txt = "The rain in Spain"
+# #Return a match at every white-space character:
+# x = re.findall("\s", txt)
+# print(x)
+# [' ', ' ', ' ']
+######################################
+# txt = "The rain in Spain"
+# #Return a match at every NON white-space character:
+# x = re.findall("\S", txt)
+# print(x)
+# ['T', 'h', 'e', 'r', 'a', 'i', 'n', 'i', 'n', 'S', 'p', 'a', 'i', 'n']
+#####################################
+# txt = "8 times +before 11:45 AM"
+# #Check if the string has any + characters:
+# x = re.findall("[8]", txt)
+# print(x)
+##################################
+# txt = "4 times before 11:45 AM"
+# #Check if the string has any two-digit numbers, from 00 to 59:
+# x = re.findall("[0-5][0-9]", txt)
+# print(x)
+# ['11', '45']
+#####################################
+# txt = "The rain12 in Spain"
+# #Check if the string has any 0, 1, 2, or 3 digits:
+# x = re.findall("[0123]", txt)
+# print(x)
+# ['1', '2']
+####################################
+# txt = "The rain in Spain"
+# #Check if the string has any a, r, or n characters:
+# x = re.findall("[arn]", txt)
+# print(x)
+# ['r', 'a', 'n', 'n', 'a', 'n']
+#######################################
+# txt = "The rain in Spain"
+# #Check if the string has any characters between a and n:
+# x = re.findall("[a-n]", txt)
+# print(x)
+# ['h', 'e', 'a', 'i', 'n', 'i', 'n', 'a', 'i', 'n']
+######################################
+# txt = "The rain in Spain"
+# #Check if the string has other characters than a, r, or n:
+# x = re.findall("[^arn]", txt)
+# ['T', 'h', 'e', ' ', 'i', ' ', 'i', ' ', 'S', 'p', 'i']
 
 #################################################################
 # regex => regular expression
