@@ -177,6 +177,20 @@ __delattr__
 # p=mustang+mustang1
 # print(p.brand)
 # =========================================
+"""__iadd__"""
+# class N:
+#     def __init__(self,a,b, *args):
+#         self.a = a
+#         self.b = b
+    
+#     def __iadd__(self, other):
+#         return self.a + other.a , self.b + other.b
+    
+# n = N(2,3)
+# m = N(2,3)
+# n += m """this is diff bettween __add__ and __iadd__"""
+# print(n + m)
+#################################################
 """__reversed__"""
 # arr = [1,2,3,4,5]
 # print(list(reversed(arr)))
@@ -222,10 +236,32 @@ __delattr__
 #         else:
 #             return False
 
-# n = N(20, 100)
-# m = N(4,100)
+# n = N(20, 100) #this is x, y
+# m = N(4,100)   #this is other a and ather y
 # print(n>m)
 ##############################################
+# class Number:
+#     def __init__(self, value):
+#         self.value = value
+
+#     def __contains__(self, item):
+#         return item in self.value
+# n = Number([1,2,3,4,5])
+# print(4 in n)
+#############################################
+
+# class Number:
+#     def __init__(self, value):
+#         self.value = value
+
+#     def __iter__(self):
+#         for item in range(self.value):
+#             yield item * 2
+
+# n = iter(Number(5))
+# print(next(n))
+# print(next(n))
+###################################################
 class Inventory:
     
     def __init__(self):
