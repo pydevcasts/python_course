@@ -40,8 +40,6 @@ class User(Base):
   password = Column(String)
 
   def __init__(self,name, fullname, password, *args, **kwargs):
-    # with engine.connect() as connection:
-    #   connection.execute(text(f"CREATE TABLE {self.__tablename__} (id INTEGER, name VARCHAR(20), password VARCHAR(30))"))
     self.name = name
     self.fullname = fullname
     self.password = password
