@@ -17,11 +17,6 @@
 # B not boundry
 # b boundry
 # ========================
-# #Return a list containing every occurrence of "ai":
-# txt = "The rain in Spain"
-# x = re.findall("ai", txt)
-# print(x)
-# ===================================
 # #The string property returns the search string:
 # txt = "The rain Bin pain"
 # x = re.search(r"\bB\w+", txt)
@@ -35,6 +30,7 @@
 # print(x.span())
 # (0, 17)
 ########################################
+# #Return a list containing every occurrence of "ai":
 # txt = "The rain in Spain"
 # x = re.findall("ai", txt)
 # print(x)
@@ -107,6 +103,7 @@
 # txt = "hello planet"
 # x = re.findall("he..o", txt)
 # print(x)
+# ["hello"]
 ########################################
 # txt = "hello planet"
 # #Check if the string starts with 'hello':
@@ -154,11 +151,6 @@ txt = "hello planet"
 # x = re.findall("\w", txt)
 # print(x)
 ######################################
-# txt = "The rain in Spain"
-# #Return a match at every word character (characters from a to Z, digits from 0-9, and the underscore _ character):
-# x = re.findall("\w", txt)
-# print(x)
-####################################
 # txt = "The rain@ in Spain"
 # #Return a match at every NON word character (characters NOT between a and Z. Like "!", "?" white-space etc.):
 # x = re.findall("\W", txt)
@@ -382,3 +374,4 @@ for match in line.finditer(data):
 # Darth  Vader <darth-vader@empire.gov>
 # Fernández de la Vega Sanz, María Teresa
 # María Teresa  Fernández de la Vega Sanz <mtfvs@spain.gov>
+    

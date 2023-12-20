@@ -52,7 +52,7 @@
 # # =========================
 
 """
-__missing__: only use for dict if key is missed
+__\ng__: only use for dict if key is missed
 """
 # class Mydict(dict):
   

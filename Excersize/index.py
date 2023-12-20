@@ -172,3 +172,176 @@ x = [1,2,9,5,8,4,11,33,22,55,999,77]
 # print(s)
 # # print(dir(set))
 # ==========================
+
+#############################################
+x = [1, 2, 3, 4, 5, 8, 7, 9]
+y = 0
+for i in range(len(x)):
+    while x[y] < x[i]:
+        x[y] = x[i]
+        y += 1
+print(x[y])
+###############################################
+
+# محاسبه مجموع اعداد یک لیست
+
+# numbers = [1, 2, 3, 4, 5]
+# total = 0
+# for number in numbers:
+#     total += number
+# print(total)
+#############################################
+
+# چاپ اعضای یک لیست با استفاده از حلقه
+
+# fruits = ["apple", "banana", "orange"]
+# for fruit in fruits:
+#     print(fruit)
+
+#########################################
+
+# جستجوی عنصر در یک لیست
+
+# names = ["Alice", "Bob", "Charlie"]
+# search_name = "Bob"
+# if search_name in names:
+#     print(f"{search_name} found!")
+# else:
+#     print(f"{search_name} not found!")
+##########################################
+# اضافه کردن و حذف عناصر از یک لیست
+
+# numbers = [1, 2, 3, 4, 5]
+# numbers.append(6)  # اضافه کردن عدد 6 به انتهای لیست
+# numbers.remove(3)  # حذف عدد 3 از لیست
+# print(numbers)
+##############################################
+# مرتب سازی یک لیست به صورت صعودی یا نزولی
+
+# numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+# numbers.sort()  # مرتب‌سازی به صورت صعودی
+# print(numbers)
+# numbers.sort(reverse=True)  # مرتب‌سازی به صورت نزولی
+# print(numbers)
+###########################################
+# تبدیل یک لیست به رشته
+
+# characters = ['a', 'b', 'c', 'd']
+# result = ''.join(characters)
+# print(result)
+########################################
+# تعویض کاراکترها در یک رشته
+
+# text = "Hello, World!"
+# new_text = text.replace('o', '*')
+# print(new_text)
+##########################################
+# جدا کردن یک رشته بر اساس یک کاراکتر خاص
+
+# sentence = "apple,banana,orange"
+# fruits = sentence.split(',')
+# print(fruits)
+# تبدیل یک رشته به لیست کاراکترها
+####################################
+
+# word = "Hello"
+# characters = list(word)
+# print(characters)
+#######################################
+# تبدیل یک لیست به رشته
+# words = ["Hello", "world", "Python"]
+# sentence = ' '.join(words)
+# print(sentence)
+########################################
+
+# جدا کردن یک رشته بر اساس یک کاراکتر خاص
+
+# data = "apple,banana,orange"
+# fruits = data.split(',')
+# print(fruits)
+##################################
+# تبدیل یک رشته به لیست کاراکترها
+
+# word = "Python"
+# characters = list(word)
+# print(characters)
+####################################
+
+# محاسبه مجموع اعداد یک لیست
+
+# numbers = [10, 20, 30, 40, 50]
+# total = 0
+# for number in numbers:
+#     total += number
+# print(total)
+################################
+# جستجوی عنصر در یک لیست
+
+# colors = ["red", "green", "blue", "yellow"]
+# search_color = "green"
+# if search_color in colors:
+#     print(f"{search_color} found!")
+# else:
+#     print(f"{search_color} not found!")
+#######################################
+# مرتب سازی یک لیست به صورت صعودی یا نزولی
+
+# numbers = [5, 2, 8, 1, 9]
+# numbers.sort()  # مرتب‌سازی به صورت صعودی
+# print(numbers)
+# numbers.sort(reverse=True)  # مرتب‌سازی به صورت نزولی
+# print(numbers)
+############################################
+
+# text = "Hello, World!"
+# new_text = text.replace('l', 'L')
+# print(new_text)
+################################
+# numbers = [11, 20, 33, 42, 55, 68, 73, 84, 97]
+
+# # Initialize sum
+# total = 0
+
+# # Iterate through the list
+# for number in numbers:
+#     # Check if the number is even
+#     if number % 2 == 0:
+#         # Add the even number to the total sum
+#         total += number
+
+# # Print the total sum of even numbers
+# print("The sum of even numbers is:", total)
+#####################################################
+
+# محاسبه فاکتوریل یک عدد
+
+# number = 5
+# result = 1
+# for i in range(1, number + 1):
+#     result *= i
+
+# print(result)
+#############################################
+# a= [0, 1]
+# for i in range(2,10):
+#     x = a[i-2]+ a[i-1]
+#     a.append(x)
+# print(a)
+###################################
+# x = [1,277,1,4,1,5,3,4,3,2,1]
+# list = []
+# for i in x:
+#     if i not in list:
+#         list.append(i)
+#     else:
+#         continue
+# print(list)
+
+##################################
+# x = [[1, 4, 16, 64],[2,3,4, 1],[3, 6, 9, 12]]
+# for i in x:
+    # y = i[0]
+    # for j in i:
+    #     if y < j:
+    #         y = j
+    # print(y)

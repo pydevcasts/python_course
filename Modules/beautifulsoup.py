@@ -1,9 +1,9 @@
 import urllib
-from urllib.request import urlopen
 import urllib.request, urllib.parse, urllib.error 
 from bs4 import BeautifulSoup
 
-x =urllib.open("https://www.ngkntk.co.jp").read()
+# x =urllib.open("https://www.ngkntk.co.jp").read()
+x = urllib.request.urlopen("https://querycode.ir")
 y = BeautifulSoup(x , "html.parser")
 
 

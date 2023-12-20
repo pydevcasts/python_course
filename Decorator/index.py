@@ -72,6 +72,23 @@ print(say_whee())
 
 # print("Sum =", sum_two_numbers(1, 2))
 # ======================================
+# from functools import wraps
+# def foo(func):
+#     @wraps(func)
+#     def outer(*args):
+#         """iosdo"""
+#         return(func(*args).upper())
+#     # outer.__doc__ = func.__doc__
+#     return outer
+
+# @foo
+# def func_d(name):
+#     """this is ariyana"""
+#     return(f"hello {name}")
+# print(func_d("siyamak"))
+# print(func_d.__doc__)
+###################################
+
 # import functools
 # def foo(v1):
 #     def auter_uper(func):

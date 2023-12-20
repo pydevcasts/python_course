@@ -110,11 +110,19 @@ class N:
     def __next__(self):
         for i in range(len(self.name)):
             print(i)
-       
+        else:
+            raise StopIteration
+        
 
 n = N([1,2,3,4,5])
 for i in iter(n):
     print(i)
 # next(n)
-
+    # or 
+# x = iter(n)
+# while True:
+#     try:
+#         print(x.__next__())
+#     except StopIteration:
+#         break
 # =======================================
