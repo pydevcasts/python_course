@@ -38,7 +38,7 @@ sys.path.append("/mymodule")
 # print(sys.executable)
 # print(sys.platform)
 # print(sys.version)
-# sys.stdout.write('python') #A built-in file object that is analogous to the interpreter’s standard output stream in Python.
+sys.stdout.write('python') #A built-in file object that is analogous to the interpreter’s standard output stream in Python.
                             #stdout is used to display output directly to the screen
 
 # import time

@@ -9,13 +9,13 @@ def show(name):
     print(f"Ending a process with {name}.....")
 
 
-p1 = Process(target = show, args=("siyamak",),daemon=True)
-p2 = Process(target = show, args=("diyana",), daemon=True)
+p1 = Process(target = show, args=("siyamak",),daemon=False)
+p2 = Process(target = show, args=("diyana",), daemon=False)
+if __name__ == '__main__':
+    p1.start()
+    p2.start()
 
-p1.start()
-p2.start()
-
-end = time.perf_counter()
-print(end - start)
-sys.exit()
+    end = time.perf_counter()
+    print(end - start)
+    sys.exit()
 

@@ -1,33 +1,3 @@
-# import requests
-# from bs4 import BeautifulSoup
-# from urllib.parse import urljoin
-
-# # آدرس وبسایت مورد نظر را تعیین کنید
-# website_url = 'http://villaarzan.com'
-
-# # ارسال درخواست GET به سایت
-# response = requests.get(website_url)
-
-# # بررسی موفقیت درخواست
-# if response.status_code == 200:
-#     # تبدیل محتوای صفحه به شیء BeautifulSoup
-#     soup = BeautifulSoup(response.text, 'html.parser')
-
-#     # یافتن تمام لینک‌های صفحه
-#     img_tags = soup.find_all('img')
-
-#     # استخراج لینک‌های فایل
-#     image_links = []
-#     for img_tag in img_tags:
-#         src = img_tag.get('src')
-#         if src:
-#             image_links.append(src)
-
-#     # نمایش لینک‌های عکس
-#     for image_link in image_links:
-#         print(image_link)
-# else:
-#     print('خطا:', response.status_code)
 
 
 from selenium import webdriver

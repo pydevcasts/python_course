@@ -2,8 +2,6 @@ import time
 from threading import Event, Thread
 
 
-
-
 def first(f,s):
     time.sleep(10)
     print("First is Start...")

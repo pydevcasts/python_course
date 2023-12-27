@@ -3,14 +3,14 @@ import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 
 # x =urllib.open("https://www.ngkntk.co.jp").read()
-x = urllib.request.urlopen("https://querycode.ir")
-y = BeautifulSoup(x , "html.parser")
+x = urllib.request.urlopen("https://academybime.com")
+# y = BeautifulSoup(x , "html.parser")
 
 
-for link in y.find_all("a"):
-    z = link.get("href")
-    print(z)
-    print("================================================")
+# for link in y.find_all("a"):
+    # z = link.get("href")
+    # print(z)
+    # print("================================================")
 # html_doc = """
 # <html><head><title>The Dormouse's story</title></head>
 # <body>
@@ -26,23 +26,42 @@ for link in y.find_all("a"):
 # """
 # from bs4 import BeautifulSoup
 
-# soup = BeautifulSoup(html_doc, 'html.parser')
+soup = BeautifulSoup(x, 'html.parser')
 
-# print(soup.prettify())
+print(soup.prettify())
 
-# soup.title
+soup.title
 
 
 
 #######################################3333333333
 # import requests
-# import time
-# time .sleep(5)
-# x = requests.get ("https://iplocation.com",proxies=dict(https='socks5://1.2.3.4:8080'))
-# # Proxy setting: http://username:pass#123@proxy:8080
+# from bs4 import BeautifulSoup
+# from urllib.parse import urljoin
 
-# print(x.content)
+# # آدرس وبسایت مورد نظر را تعیین کنید
+# website_url = 'http://villaarzan.com'
 
+# # ارسال درخواست GET به سایت
+# response = requests.get(website_url)
 
+# # بررسی موفقیت درخواست
+# if response.status_code == 200:
+#     # تبدیل محتوای صفحه به شیء BeautifulSoup
+#     soup = BeautifulSoup(response.text, 'html.parser')
 
+#     # یافتن تمام لینک‌های صفحه
+#     img_tags = soup.find_all('img')
 
+#     # استخراج لینک‌های فایل
+#     image_links = []
+#     for img_tag in img_tags:
+#         src = img_tag.get('src')
+#         if src:
+#             image_links.append(src)
+
+#     # نمایش لینک‌های عکس
+#     for image_link in image_links:
+#         print(image_link)
+# else:
+#     print('خطا:', response.status_code)

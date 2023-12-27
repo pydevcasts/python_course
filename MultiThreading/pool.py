@@ -9,9 +9,11 @@ def show(name):
     time.sleep(3)
     print(f"Ending {name}")
 
-with ProcessPoolExecutor(max_workers=2) as executor:
-    names = ["one", "two", "three", "four"]
-    executor.map(show, names) 
 
-end = time.perf_counter()
-print(end - start)    
+if __name__=="__main__":
+    with ProcessPoolExecutor(max_workers=2) as executor:
+        names = ["one", "two", "three", "four"]
+        executor.map(show, names) 
+
+    end = time.perf_counter()
+    print(end - start)    

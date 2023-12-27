@@ -28,7 +28,7 @@ import time
 
 
 # paylod= {'key1': 'value1', 'key2': ['value2', 'value3']}
-# x = requests.get("http://parsiankhazar.com/get", params = paylod)
+# x = requests.get("http://academybime.com", params = paylod)
 # print(x.url)
 # print(x.encoding)
 # x.encoding='ISO-8859-1'
@@ -42,17 +42,17 @@ import time
 # print(r.row)
 
 
-data = {"email":"test@gmail.com",
-        "password":"12345"}
-s = requests.post("http://shalishomal.ir", params=data)
-print(s.status_code)
+# data = {"email":"test@gmail.com",
+#         "password":"12345"}
+# s = requests.post("http://shalishomal.ir", params=data)
+# print(s.status_code)
 
 ########################################################################
 import requests
 import urllib
 
-# req = urllib.request.urlopen('https://zerotohero.ir/')
-# print(req.status)
+req = urllib.request.urlopen('https://academybime.com/')
+print(req.status)
 
 
 

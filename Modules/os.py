@@ -19,8 +19,8 @@ import os
 # parent_process()
 
 # ==================================
-os.fork()
-os.fork()
+# os.fork()
+# os.fork()
 print("hello ...")
 
 # =========================================

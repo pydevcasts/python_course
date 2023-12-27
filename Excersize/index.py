@@ -60,7 +60,7 @@
 #         y +=1
 # print(x[y])
 # ===========================
-
+# Max .
 # x = ["ali", "siyamak", "mahdi"]
 # y = 0
 # for i in range(len(x)):
@@ -70,7 +70,8 @@
 # print(x[y])
 
 # ==================================
-
+# Max with for 
+# x = [1,2,9,5,8,4,11,33,22,55,999,77]
 # x = ["ali", "siyamak", "mahdi"]
 # y = 0
 # for i in range(len(x)):
@@ -79,15 +80,6 @@
   
 # print(x[y])
 # ====================================
-x = [1,2,9,5,8,4,11,33,22,55,999,77]
-# y = 0
-# for i in range(len(x)):
-#     if x[i] > x[y]:
-#         x[y] = x[i]
-# print(x[y])
-# x = [1,2,5,4]
-
-# ========================
 
 # name = {"ali", "hasan", "mahdi", "zahra"}
 # y = input("what is your name?\n")
@@ -106,7 +98,11 @@ x = [1,2,9,5,8,4,11,33,22,55,999,77]
 
 # x = "CatBatSatFatOr"
 # out =["Cat", "Bat", "Sat", "Fat", "Or"]  خروجی این باشد
-
+# x = "CatBatSatFatOr"
+# demo = []
+# for i in range(0, len(x), 3):
+#     demo.append(x[i:i+3])
+# print(demo)
 # # =========================
 
 
@@ -171,18 +167,8 @@ x = [1,2,9,5,8,4,11,33,22,55,999,77]
 # s.update({5})
 # print(s)
 # # print(dir(set))
-# ==========================
 
 #############################################
-x = [1, 2, 3, 4, 5, 8, 7, 9]
-y = 0
-for i in range(len(x)):
-    while x[y] < x[i]:
-        x[y] = x[i]
-        y += 1
-print(x[y])
-###############################################
-
 # محاسبه مجموع اعداد یک لیست
 
 # numbers = [1, 2, 3, 4, 5]
@@ -267,14 +253,6 @@ print(x[y])
 # print(characters)
 ####################################
 
-# محاسبه مجموع اعداد یک لیست
-
-# numbers = [10, 20, 30, 40, 50]
-# total = 0
-# for number in numbers:
-#     total += number
-# print(total)
-################################
 # جستجوی عنصر در یک لیست
 
 # colors = ["red", "green", "blue", "yellow"]
@@ -327,15 +305,6 @@ print(x[y])
 #     x = a[i-2]+ a[i-1]
 #     a.append(x)
 # print(a)
-###################################
-# x = [1,277,1,4,1,5,3,4,3,2,1]
-# list = []
-# for i in x:
-#     if i not in list:
-#         list.append(i)
-#     else:
-#         continue
-# print(list)
 
 ##################################
 # x = [[1, 4, 16, 64],[2,3,4, 1],[3, 6, 9, 12]]
@@ -345,3 +314,48 @@ print(x[y])
     #     if y < j:
     #         y = j
     # print(y)
+#######################################
+# sort array
+# x = [5,3,6,9,8]
+# first = 0
+# last = len(x) - 1
+# while first < last:
+#     temp = x[first]
+#     x[first]=x[last]    
+#     x[last] = temp
+#     first += 1
+#     last -= 1
+# print(x)
+#######################################
+# rotate 
+# x= [1,2,3,4,5]
+# d = 2
+# k = 0
+# temp1 = []
+# temp2 = []
+# for i in range(0,d):
+#     temp1.append(x[i])
+# for j in range(d, len(x)):
+#     temp2.append(x[j])
+# print(temp2 + temp1)
+########################################
+# write the element without repeat 
+# x = [1,277,1,4,1,5,3,4,3,2,1]
+# list = []
+# for i in x:
+#     if i not in list:
+#         list.append(i)
+#     else:
+#         continue
+# print(list)
+######################################
+# just element is not repeated or to remove repeat element
+# x = [1,277,1,4,1,5,3,4,3,2,1]
+# demo = []
+# for i in range(len(x)):
+#     if x[i] in demo:
+#         demo.remove(x[i])
+#     else:
+#         demo.append(x[i])
+# print(demo)
+##################################

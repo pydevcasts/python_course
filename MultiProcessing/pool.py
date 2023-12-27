@@ -17,3 +17,4 @@ pool.map(foo, numes)
 pool.close()
 pool.join()
 print(cpu_count())
+
