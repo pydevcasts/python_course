@@ -111,14 +111,6 @@
 # x = [1,277,1,4,1,5,3,4,3,2,1]
 
 # # ==========================
-
-
-# بزرگترین عدد تو لیست نشون بده
-# x = [[1, 4, 16, 64],[2,3,4, 1],[3, 6, 9, 12]]
-# out = 64 , 4 12 خروجی این ۳ عدد باشد
-
-
-
 # fruit = ["kiwi", "bnana", "orange"]
 
 # user_eat = input("what do you want to eat?")
@@ -350,7 +342,7 @@
 # print(list)
 ######################################
 # just element is not repeated or to remove repeat element
-# x = [1,277,1,4,1,5,3,4,3,2,1]
+# x = [1,277,1, 2,3,3,99,4,1,5,3,4,3,2,1]
 # demo = []
 # for i in range(len(x)):
 #     if x[i] in demo:
