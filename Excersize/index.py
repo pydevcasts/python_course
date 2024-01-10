@@ -351,3 +351,77 @@
 #         demo.append(x[i])
 # print(demo)
 ##################################
+# arr = [90,100, 78, 89, 67]
+# arr.sort()
+# first =0
+# last = len(arr)
+# mid = int(round(first + last) / 2)
+# if(len(arr) % 2 == 0):
+#         median = int((arr[mid] + arr[mid - 1]) / 2)
+#         print(median)
+# else:
+#     print(arr[mid])
+###################################
+# x = "foo"
+# y = "bar"
+# dict = {}
+# for i in range(len(x)):
+#     dict[x[i]] = y[i]
+
+# print(dict)
+#####################################
+# x = [1,2,3,4]
+dict = {}
+# for i in range(len(x)):
+#     dict[x[i]]= "h"
+# print(dict)
+######################################
+x = [1,2,3,4,5,2,1,6,5]
+# list = ['a', 1 , 'b', 5, 'c', 3, 'd', 99]
+# def foo(arr):
+#         it = iter(arr)
+#         print(dict(zip(it, x)))
+
+# foo(list)
+#################################
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+# re = input("what do you want to remove?\n")
+# del thisdict[re]
+# thisdict.pop(re)
+# ########################################
+# key = input("what do you want to remove?\n")
+# value = input("what do you want to remove?\n")
+
+# thisdict.update({key:value})
+# print(thisdict) 
+
+##############################################
+# count = 0
+# while count < 4:
+
+#     key = input("what do you want to remove?\n")
+#     value = input("what do you want to remove?\n")
+
+#     thisdict.update({key:value})
+#     count += 1
+
+# print(thisdict)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
