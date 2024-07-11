@@ -59,3 +59,28 @@ node2.next = node3
 
 ll = LinkedList(head=node1)
 ll.to_string()
+############################################################
+from collections import deque
+
+x = deque()
+x.append(1)
+x.append(2)
+x.append(3)
+x.append(4)
+x.append(5)
+x.append(6)
+#stack
+# print(x.pop()) 
+# print(x.pop())
+# print(x.pop())
+# print(x.pop())
+# print(x.pop())
+# print(x.pop())
+################################
+#queue
+print(x.popleft())
+print(x.popleft())
+print(x.popleft())
+print(x.popleft())
+print(x.popleft())
+print(x.popleft())
