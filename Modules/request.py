@@ -56,7 +56,6 @@ print(req.status)
 
 
 
-
 #  imagefile
 # url = 'https://www.python.org/static/opengraph-icon-200x200.png'
 # urllib.request.urlretrieve(url, "image-urllib.png")
@@ -87,8 +86,6 @@ urllib.request.urlretrieve(url, "zip-urllib.zip")
 import requests
 
 session = requests.session()
-
-
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0',
            'Accept': '*/*'}
 
@@ -141,4 +138,22 @@ else:
 # برای فهم بهتر من مقدار cookie استفاده شده را هم نمایش دادم تا شما بهتر متوجه شوید
 # و در مرحله اخر گفتم که یک فایل با نام result.html ایجاد کنه و Get_login.text را در آن قرار دهد !
 
+###################################################################
 
+import requests
+from bs4 import BeautifulSoup
+url = 'https://www.booking.com/searchresults.html?aid=304142&label=gen173bo-1DCAEoggI46AdIM1gDaG-IAQGYATG4ARnIAQzYAQPoAQH4AQOIAgGYAgKoAgO4AsH7qbUGwAIB0gIkODliMGFjNzYtZDY4My00YzQ5LTgzNzMtMzg4NzhkY2NjMWJj2AIE4AIB&checkin=2024-08-08&checkout=2024-08-09&dest_id=-2590884&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0'
+
+response = requests.get(url)
+if response.status_code == 200:
+    with open('hotels.html', 'w',encoding='utf-8') as file:
+        file.write(response.text)
+
+with open('booking.html',encoding='utf-8') as file:
+    html_content = file.read()
+
+soup = BeautifulSoup(html_content, 'html.parser')
+hotel_names = soup.find_all('div', class_='e037993315 f5f8fe25fa')
+
+for hotel in hotel_names:
+    print(hotel.text.strip())
