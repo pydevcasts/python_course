@@ -284,3 +284,23 @@ class Inventory:
 
     def __getitem__():
         pass
+############################################################
+class N:
+    def __init__(self, value):
+        if isinstance(value, list):
+            self.value = tuple(value)
+        else:
+            self.value = value
+    
+    def __hash__(self):
+        return hash(self.value)
+
+    def __eq__(self, other: object):
+        if isinstance(other, N):
+            return self.value == other.value
+        return False
+
+n = N([1,2])
+m = N([3,4])
+print(hash(n))
+print(n is m)
