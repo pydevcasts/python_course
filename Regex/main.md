@@ -146,4 +146,39 @@ phones = re.findall(r'\d{3}-\d{3}-\d{4}', text)
 print(phones)  # خروجی: ['123-456-7890', '987-654-3210']
 ```
 
----
+
+- **شناسایی کلمات با خط تیره:**
+
+
+
+```python
+
+sentence = "My mother-in-law is a well-known doctor and 123-test is a project."
+matches = re.findall(r'\b[\w-]+\b', sentence)
+print(matches)
+```
+
+### خروجی:
+```
+['My', 'mother-in-law', 'is', 'a', 'well-known', 'doctor', 'and', '123-test', 'is', 'a', 'project']
+```
+
+### توضیحات:
+- **استخراج فقط کلماتی که شامل `-` هستند:**
+
+
+```regex
+\b\w+-\w+\b
+```
+
+```python
+
+sentence = "My mother-in-law is a well-known doctor and 123-test is a project."
+matches = re.findall(r'\b\w+-\w+\b', sentence)
+print(matches)
+```
+### خروجی:
+```
+['mother-in-law', 'well-known', '123-test']
+```
+
