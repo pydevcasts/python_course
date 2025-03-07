@@ -155,14 +155,9 @@ print(phones)  # خروجی: ['123-456-7890', '987-654-3210']
 
 sentence = "My mother-in-law is a well-known doctor and 123-test is a project."
 matches = re.findall(r'\b[\w-]+\b', sentence)
-print(matches)
+print(matches) # 
+['My', 'mother-in-law', 'is', 'a', 'well-known', 'doctor', 'and', '123-test', 'is', 'a', 'project'] :خروجی
 ```
-
-### خروجی:
-```
-['My', 'mother-in-law', 'is', 'a', 'well-known', 'doctor', 'and', '123-test', 'is', 'a', 'project']
-```
-
 
 - **استخراج فقط کلماتی که شامل `-` هستند:**
 
@@ -172,10 +167,7 @@ print(matches)
 
 sentence = "My mother-in-law is a well-known doctor and 123-test is a project."
 matches = re.findall(r'\b\w+-\w+\b', sentence)
-print(matches)
+print(matches) # ['mother-in-law', 'well-known', '123-test'] :خروجی
 ```
-### خروجی:
-```
-['mother-in-law', 'well-known', '123-test']
-```
+
 
