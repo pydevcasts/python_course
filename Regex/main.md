@@ -163,7 +163,7 @@ print(matches)
 ['My', 'mother-in-law', 'is', 'a', 'well-known', 'doctor', 'and', '123-test', 'is', 'a', 'project']
 ```
 
-### توضیحات:
+
 - **استخراج فقط کلماتی که شامل `-` هستند:**
 
 
