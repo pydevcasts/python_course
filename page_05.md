@@ -111,31 +111,36 @@ Thanks for using Python Calculator 🐍💙
 ### 🎯 اجرای چندباره‌ی ماشین حساب (بدون بستن برنامه)
 
 ```python
-# Repeat calculator until user quits
-while True:
-    print("\n=== Simple Python Calculator ===")
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
-    op = input("Choose operation (+, -, *, /): ")
+# Simple Calculator (no loops)
+print("=== Welcome to Python Calculator ===")
 
-    if op == '+':
-        print(f"Result: {num1 + num2}")
-    elif op == '-':
-        print(f"Result: {num1 - num2}")
-    elif op == '*':
-        print(f"Result: {num1 * num2}")
-    elif op == '/':
-        if num2 != 0:
-            print(f"Result: {num1 / num2}")
-        else:
-            print("❌ Cannot divide by zero!")
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+print("Choose an operation: +, -, *, /, ** (power)")
+operation = input("Enter your choice: ")
+
+if operation == '+':
+    result = num1 + num2
+    print(f"{num1} + {num2} = {result} ✅")
+elif operation == '-':
+    result = num1 - num2
+    print(f"{num1} - {num2} = {result} ✅")
+elif operation == '*':
+    result = num1 * num2
+    print(f"{num1} × {num2} = {result} ✅")
+elif operation == '/':
+    if num2 != 0:
+        result = num1 / num2
+        print(f"{num1} ÷ {num2} = {result} ✅")
     else:
-        print("⚠️ Invalid operation!")
+        print("❌ Error: Division by zero is not allowed!")
+elif operation == '**':
+    result = num1 ** num2
+    print(f"{num1} ** {num2} = {result} ✅")
+else:
+    print("⚠️ Invalid operation! Please try again.")
 
-    again = input("Do you want to calculate again? (yes/no): ")
-    if again.lower() != "yes":
-        print("👋 Bye! Keep learning Python 🐍")
-        break
 ```
 
 📤 مثال خروجی:
@@ -146,8 +151,6 @@ Enter first number: 8
 Enter second number: 2
 Choose operation (+, -, *, /): /
 Result: 4.0
-Do you want to calculate again? (yes/no): no
-👋 Bye! Keep learning Python 🐍
 ```
 
 ---
