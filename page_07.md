@@ -117,18 +117,18 @@ Boom! 💥
 word = ""
 
 while word != "python":
-    word = input("اسم زبان برنامه‌نویسی محبوب من چیه؟ 🤔: ")
+    word = input("What is my favorite programming language? 🤔: ")
 
-print("آفرین! 🎉 جواب درست بود 🐍")
+print("Well done! 🎉 That's the correct answer! 🐍")
 ```
 
 📤 نمونه اجرا:
 
 ```
-اسم زبان برنامه‌نویسی محبوب من چیه؟ 🤔: java
-اسم زبان برنامه‌نویسی محبوب من چیه؟ 🤔: c++
-اسم زبان برنامه‌نویسی محبوب من چیه؟ 🤔: python
-آفرین! 🎉 جواب درست بود 🐍
+"What is my favorite programming language? 🤔:"java
+“What is my favorite programming language? 🤔:"c++
+“What is my favorite programming language? 🤔:" python
+“Well done! 🎉 That’s the correct answer! 🐍”
 ```
 
 ---
@@ -139,20 +139,22 @@ print("آفرین! 🎉 جواب درست بود 🐍")
 
 ```python
 while True:
-    name = input("نام خودت رو بنویس (برای خروج بنویس 'exit'): ")
-    if name == "exit":
-        print("خروج از برنامه 👋")
-        break
-    print(f"سلام {name}! 😊")
+    name = input("Please enter your name (type 'exit' to quit): ")  # Prompt the user for their name
+    if name == "exit":  # Check if the user wants to exit
+        print("Exiting the program 👋")  # Print exit message
+        break  # Exit the loop
+    print(f"Hello {name}! 😊")  # Greet the user with their name
 ```
 
 📤 خروجی نمونه:
 
 ```
-نام خودت رو بنویس (برای خروج بنویس 'exit'): Sara
-سلام Sara! 😊
-نام خودت رو بنویس (برای خروج بنویس 'exit'): exit
-خروج از برنامه 👋
+Please enter your name (type 'exit' to quit): Alice
+Hello Alice! 😊
+Please enter your name (type 'exit' to quit): Bob
+Hello Bob! 😊
+Please enter your name (type 'exit' to quit): exit
+Exiting the program 👋
 ```
 
 ---
