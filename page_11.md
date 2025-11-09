@@ -175,7 +175,3 @@ for i in range(5):
 ### 🔗 **کدها و تمرین‌های این بخش در گیت‌هاب نویسنده:**
 
 👨‍💻 [Siamak Abbasnejad — pydevcasts](https://github.com/pydevcasts)
-
-
-
-آیا بریم سراغ صفحه ۱۲ و جدول ضرب و الگوهای عددی بعدی رو شروع کنیم؟
