@@ -169,6 +169,3 @@ for i in range(1, 6):
 ### 🔗 **کدها و تمرین‌های این بخش در گیت‌هاب نویسنده:**
 
 👨‍💻 [Siamak Abbasnejad — pydevcasts](https://github.com/pydevcasts)
----
-
-آیا بریم سراغ صفحه ۱۳ و «لیست‌های دوبعدی و پیمایششون»؟
