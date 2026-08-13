@@ -1,9 +1,79 @@
-./venv
-venv
+# Documentation
+*.md.bak
+*.markdown.bak
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
+
+# Logs
+*.log
+
+# Environment specific
+.env
+.env.local
+.env.*
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+*.pyc
+__pycache__/
+*.class
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
+
+# Dependencies
+node_modules/
 venv/
-./venv/
-./venv/*
-*.txt
-.webp
-.vscode
-todo.md
+.venv/
+.mypy_cache/
+.pytest_cache/
+target/
+.gradle/
+
+# Distribution
+dist/
+build/
+coverage/
+htmlcov/
+.coverage
+
+# System
+.DS_Store
+Thumbs.db
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
