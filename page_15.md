@@ -335,22 +335,21 @@ except Exception as e:
 **پاسخ تشریحی:**
 
 ```python
+# Get names from user
+names_input = input("Enter names (separated by commas): ")
 
-# دریافت اسامی از کاربر
-names_input = input("اسامی را وارد کنید (با کاما جدا کنید): ")
-
-# تبدیل رشته به لیست
+# Convert string to list
 names_list = names_input.split(",")
 
-# نوشتن در فایل
+# Write to file
 try:
     with open("names.txt", "w") as f:
         for name in names_list:
-            # حذف فاصله‌های اضافی و نوشتن هر نام در یک خط
+            # Remove extra spaces and write each name on a new line
             f.write(name.strip() + "\n")
-    print("✅ اسامی با موفقیت در names.txt ذخیره شدند.")
+    print("✅ Names successfully saved to names.txt.")
 except Exception as e:
-    print(f"❌ خطایی رخ داد: {e}")
+    print(f"❌ An error occurred: {e}")
 
 ```
 
