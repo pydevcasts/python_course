@@ -335,6 +335,7 @@ except Exception as e:
 **پاسخ تشریحی:**
 
 ```python
+
 # دریافت اسامی از کاربر
 names_input = input("اسامی را وارد کنید (با کاما جدا کنید): ")
 
@@ -350,6 +351,7 @@ try:
     print("✅ اسامی با موفقیت در names.txt ذخیره شدند.")
 except Exception as e:
     print(f"❌ خطایی رخ داد: {e}")
+
 ```
 
 📤 مثال ورودی:
