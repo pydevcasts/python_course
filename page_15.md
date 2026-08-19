@@ -210,6 +210,7 @@ print(len(numbers))       # 7
 ## 🔸 مثال ترکیبی: کار با لیست خرید 🛒
 
 ```python
+
 # ساخت لیست خرید
 shopping_list = ["شیر", "نان", "تخم‌مرغ"]
 
@@ -233,6 +234,7 @@ print("تعداد آیتم‌ها:", len(shopping_list))
 # مرتب‌سازی
 shopping_list.sort()
 print("لیست مرتب‌شده:", shopping_list)
+
 ```
 
 📤 خروجی:
