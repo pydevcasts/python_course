@@ -1,57 +1,45 @@
-# Documentation
 
+# Compiled Python files
+*.pyc
+__pycache__/
 
-# Temporary files
-*.tmp
-*.temp
-*.bak
-*~
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
 
-# Logs
-*.log
-
-# Environment specific
+# Virtual environments
+venv/
+.venv/
 .env
 .env.local
-.env.*
+*.env.*
 
-# IDE/Editor
+# IDE specific
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Build artifacts
-*.pyc
-__pycache__/
-*.class
-*.o
-*.obj
-*.exe
-*.dll
-*.so
-*.a
-*.out
+# Logs
+*.log
 
-# Dependencies
-node_modules/
-venv/
-.venv/
-.mypy_cache/
-.pytest_cache/
-target/
-.gradle/
-
-# Distribution
-dist/
-build/
+# Coverage reports
+.coverage
 coverage/
 htmlcov/
-.coverage
 
-# System
+# Testing
+.pytest_cache/
+.mypy_cache/
+
+# OS generated files
 .DS_Store
 Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
 
 # Compressed files
 *.zip
@@ -76,3 +64,4 @@ Thumbs.db
 *.tar.bz2
 *.tar.xz
 *.tar.zst
+```
