@@ -1,9 +1,2 @@
-./venv
-venv
-venv/
-./venv/
-./venv/*
-*.txt
-.webp
-.vscode
-todo.md
+# Page files
+page_*.md
